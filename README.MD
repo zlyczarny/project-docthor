@@ -17,3 +17,5 @@ Do poprawy:
 2. Problem z file_size can't be null przy dodawaniu pliku
 3. Hierarcha roles - zmniejszenie ilosci uprawnień
 4. Dot. TODO 3 - formularz zmiany hasła?
+5. Dodanie textu na start - dashboard
+6. Route prowadzący do /admin
