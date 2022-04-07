@@ -32,7 +32,7 @@ class KsieKat3CrudController extends AbstractCrudController
             ->setEntityLabelInPlural('Dokumenty')
             ->setPageTitle('index', 'Lista Dokumentów')
             ->setPageTitle('detail', fn (KsieKat3 $nazwa) => (string) $nazwa)
-    
+            ->setEntityPermission('ROLE_KSIE')
             // in addition to a string, the argument of the singular and plural label methods
             // can be a closure that defines two nullable arguments: entityInstance (which will
             // be null in 'index' and 'new' pages) and the current page name

@@ -33,6 +33,7 @@ class KadrKat3CrudController extends AbstractCrudController
             ->setEntityLabelInPlural('Dokumenty')
             ->setPageTitle('index', 'Lista Procedur')
             ->setPageTitle('detail', fn (KadrKat3 $nazwa) => (string) $nazwa)
+            ->setEntityPermission('ROLE_KADR')
     
             // in addition to a string, the argument of the singular and plural label methods
             // can be a closure that defines two nullable arguments: entityInstance (which will

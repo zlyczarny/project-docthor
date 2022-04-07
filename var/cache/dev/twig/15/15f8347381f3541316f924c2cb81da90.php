@@ -49,7 +49,7 @@ class __TwigTemplate_aa54bda8c707411fb9b21cf47f98a76f extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@EasyAdmin/page/content.html.twig"));
 
         // line 3
-        $context["__internal_161d742db669f2631721ee40754d9b7ba960377f06be5fe0582ad5edbd28de40"] = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 3, $this->source); })()), "i18n", [], "any", false, false, false, 3), "translationDomain", [], "any", false, false, false, 3);
+        $context["__internal_7d5e05480802cd4f4a4aae3a3fe58cab677fb1bd65faf0d93ea286aa10caafb0"] = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 3, $this->source); })()), "i18n", [], "any", false, false, false, 3), "translationDomain", [], "any", false, false, false, 3);
         // line 2
         $this->getParent($context)->display($context, array_merge($this->blocks, $blocks));
         
@@ -129,9 +129,19 @@ class __TwigTemplate_aa54bda8c707411fb9b21cf47f98a76f extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_content"));
 
-        // line 14
-        echo "    ";
-        @trigger_error("The \"page_content\" block is deprecated, use \"main\" instead."." (\"@EasyAdmin/page/content.html.twig\" at line 14).", E_USER_DEPRECATED);
+        echo "Ekran startowy aplikacji DocThor.<br><br>
+<img src=\"icons.png\">
+<br><br><i class=\"fa fa-file-text\" aria-hidden=\"true\"></i> Docthor to system zarządzania dokumentami firmowym. Pozwalajacy na wyszukiwanie, filtrowanie, przeglądanie oraz pobieranie dokumentów. Dokumenty są kategoryzowane i udostępniane według ustalonych dostępów.
+
+<br><br><i class=\"fa fa-question\" aria-hidden=\"true\"></i>
+Wybierz interesujacą cie kategorie z menu po lewej stronie. Jeżeli nie masz dostępu do potrzebnych kategorii zgłoś się do przełożonego.
+<br>
+<br><i class=\"fa fa-info\" aria-hidden=\"true\"></i>
+Projekt powstał w ramach realizacji projektu zaliczeniowego w studiach podyplomowych WSB. Projekt zrealizowany przez Katarzyna Drzewiecka oraz Bartosz Tomaszewski.  
+  
+    ";
+        // line 23
+        @trigger_error("The \"page_content\" block is deprecated, use \"main\" instead."." (\"@EasyAdmin/page/content.html.twig\" at line 23).", E_USER_DEPRECATED);
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -140,7 +150,7 @@ class __TwigTemplate_aa54bda8c707411fb9b21cf47f98a76f extends Template
 
     }
 
-    // line 17
+    // line 26
     public function block_main($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -171,7 +181,7 @@ class __TwigTemplate_aa54bda8c707411fb9b21cf47f98a76f extends Template
 
     public function getDebugInfo()
     {
-        return array (  144 => 17,  133 => 14,  123 => 13,  104 => 11,  93 => 8,  83 => 7,  64 => 5,  54 => 2,  52 => 3,  39 => 2,);
+        return array (  154 => 26,  144 => 23,  123 => 13,  104 => 11,  93 => 8,  83 => 7,  64 => 5,  54 => 2,  52 => 3,  39 => 2,);
     }
 
     public function getSourceContext()
@@ -188,11 +198,20 @@ DocThor - dashboard {% deprecated 'The \"page_title\" block is deprecated, use \
 
 {% block content_title %}{{ block('page_title') }}{% endblock %}
 
-{% block page_content %}
+{% block page_content %}Ekran startowy aplikacji DocThor.<br><br>
+<img src=\"icons.png\">
+<br><br><i class=\"fa fa-file-text\" aria-hidden=\"true\"></i> Docthor to system zarządzania dokumentami firmowym. Pozwalajacy na wyszukiwanie, filtrowanie, przeglądanie oraz pobieranie dokumentów. Dokumenty są kategoryzowane i udostępniane według ustalonych dostępów.
+
+<br><br><i class=\"fa fa-question\" aria-hidden=\"true\"></i>
+Wybierz interesujacą cie kategorie z menu po lewej stronie. Jeżeli nie masz dostępu do potrzebnych kategorii zgłoś się do przełożonego.
+<br>
+<br><i class=\"fa fa-info\" aria-hidden=\"true\"></i>
+Projekt powstał w ramach realizacji projektu zaliczeniowego w studiach podyplomowych WSB. Projekt zrealizowany przez Katarzyna Drzewiecka oraz Bartosz Tomaszewski.  
+  
     {% deprecated 'The \"page_content\" block is deprecated, use \"main\" instead.' %}
 {% endblock %}
 
 {% block main %}{{ block('page_content') }}{% endblock %}
-", "@EasyAdmin/page/content.html.twig", "C:\\xampp\\htdocs\\docthor\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\page\\content.html.twig");
+", "@EasyAdmin/page/content.html.twig", "D:\\Pobrane\\project-docthor2\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\page\\content.html.twig");
     }
 }

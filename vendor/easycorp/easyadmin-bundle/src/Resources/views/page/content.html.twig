@@ -10,7 +10,16 @@ DocThor - dashboard {% deprecated 'The "page_title" block is deprecated, use "co
 
 {% block content_title %}{{ block('page_title') }}{% endblock %}
 
-{% block page_content %}
+{% block page_content %}Ekran startowy aplikacji DocThor.<br><br>
+<img src="icons.png">
+<br><br><i class="fa fa-file-text" aria-hidden="true"></i> Docthor to system zarządzania dokumentami firmowym. Pozwalajacy na wyszukiwanie, filtrowanie, przeglądanie oraz pobieranie dokumentów. Dokumenty są kategoryzowane i udostępniane według ustalonych dostępów.
+
+<br><br><i class="fa fa-question" aria-hidden="true"></i>
+Wybierz interesujacą cie kategorie z menu po lewej stronie. Jeżeli nie masz dostępu do potrzebnych kategorii zgłoś się do przełożonego.
+<br>
+<br><i class="fa fa-info" aria-hidden="true"></i>
+Projekt powstał w ramach realizacji projektu zaliczeniowego w studiach podyplomowych WSB. Projekt zrealizowany przez Katarzyna Drzewiecka oraz Bartosz Tomaszewski.  
+  
     {% deprecated 'The "page_content" block is deprecated, use "main" instead.' %}
 {% endblock %}
 

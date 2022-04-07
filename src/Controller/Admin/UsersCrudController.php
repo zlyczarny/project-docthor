@@ -86,7 +86,6 @@ class UsersCrudController extends AbstractCrudController
                     'Księgowość' => 'ROLE_KSIE',
                     'Księgowość edycja' => 'ROLE_KSIEEDIT',
                     'Administrator' => 'ROLE_ADMIN',
-                    'Inne edycja' => 'ROLE_INNEDIT',
                     'Marketing' => 'ROLE_MARK',
                     'Marketing edycja' => 'ROLE_MARKEDIT',
                     'Blokada konta' => 'ROLE_BLOK']),
@@ -124,7 +123,7 @@ class UsersCrudController extends AbstractCrudController
                 ->setEntityLabelInPlural('Użytkownicy')
                 ->setPageTitle('index', 'Lista Użytkowników')
                 ->setPageTitle('detail', fn (Users $nazwa) => (string) $username)
-        
+                ->setEntityPermission('ROLE_ADMIN')
                 // in addition to a string, the argument of the singular and plural label methods
                 // can be a closure that defines two nullable arguments: entityInstance (which will
                 // be null in 'index' and 'new' pages) and the current page name

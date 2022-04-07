@@ -65,7 +65,7 @@ class __TwigTemplate_573f5a7ac99f7b0fa65bac2f9b88f0a8 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Log in!";
+        echo "DocThor - Zaloguj się!";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -166,7 +166,7 @@ class __TwigTemplate_573f5a7ac99f7b0fa65bac2f9b88f0a8 extends Template
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Log in!{% endblock %}
+{% block title %}DocThor - Zaloguj się!{% endblock %}
 
 {% block body %}
 <form method=\"post\">

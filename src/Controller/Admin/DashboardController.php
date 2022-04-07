@@ -76,7 +76,7 @@ class DashboardController extends AbstractDashboardController
                MenuItem::linkToCrud('Oferty', 'fa fa-tags', MarKat2::class),
                MenuItem::linkToCrud('Procedury', 'fas fa-align-left', MarKat3::class),
                ]),
-            MenuItem::subMenu('Sprzedaż', 'fa fa-money')->setPermission("ROLE_SPRZ")->setSubItems([
+            MenuItem::subMenu('Sprzedaż', 'fa fa-money')->setPermission("ROLE_SPRZ") ->setSubItems([
                 MenuItem::linkToCrud('Umowy', 'fas fa-copy', SprzKat1::class),
                 MenuItem::linkToCrud('Oferty', 'fa fa-tags', SprzKat2::class),
                 MenuItem::linkToCrud('Dokumentacja', 'fa fa-list-ol', SprzKat3::class),
@@ -100,7 +100,7 @@ class DashboardController extends AbstractDashboardController
                 MenuItem::linkToCrud('Certyfikaty', 'fa fa-paper-plane', InnKat4::class),
             MenuItem::linkToLogout('Wyloguj', 'fa fa-sign-out'),
             MenuItem::section('Administrator', 'fa fa-lock  ')->setPermission('ROLE_ADMIN'),
-            MenuItem::linkToCrud('Użytkownicy', 'fa fa-users', Users::class) 
+                MenuItem::linkToCrud('Użytkownicy', 'fa fa-users', Users::class) ->setPermission('ROLE_ADMIN')
                                                               
     #   ikony dostępne na https://fontawesome.com/v4/icons/
            // ...

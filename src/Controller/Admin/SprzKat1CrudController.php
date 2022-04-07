@@ -32,12 +32,11 @@ class SprzKat1CrudController extends AbstractCrudController
             ->setEntityLabelInPlural('Dokumenty')
             ->setPageTitle('index', 'Lista Umów')
             ->setPageTitle('detail', fn (SprzKat1 $nazwa) => (string) $nazwa)
+            ->setEntityPermission('ROLE_SPRZ')
     
             // in addition to a string, the argument of the singular and plural label methods
             // can be a closure that defines two nullable arguments: entityInstance (which will
             // be null in 'index' and 'new' pages) and the current page name
-
-
 
             //pokazuje akcje w lini
             ->showEntityActionsInlined()
@@ -54,6 +53,19 @@ class SprzKat1CrudController extends AbstractCrudController
             ->add('wersja')
         ;
     }
+
+    public function configureActions(Actions $actions): Actions
+    {
+        return $actions
+            // ...
+            ->add(Crud::PAGE_INDEX, Action::DETAIL)
+            ->setPermission(Action::NEW, 'ROLE_MARKEDIT')
+            ->setPermission(Action::EDIT, 'ROLE_MARKEDIT')
+            ->setPermission(Action::DELETE, 'ROLE_MARKEDIT')
+            //->remove(Crud::PAGE_INDEX, Action::EDIT)
+        ;
+    }
+
     public function configureFields(string $pageName): iterable
     {
         return [
@@ -71,9 +83,10 @@ class SprzKat1CrudController extends AbstractCrudController
             ->setUploadDir('public/dokumenty/sprzedaz')
             ->setUploadedFileNamePattern('[randomhash].[extension]')
             ->setRequired(false),
-
         ];
     }    
+
+
     /*
     public function configureFields(string $pageName): iterable
     {
