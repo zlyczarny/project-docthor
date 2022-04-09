@@ -59,9 +59,9 @@ class SprzKat1CrudController extends AbstractCrudController
         return $actions
             // ...
             ->add(Crud::PAGE_INDEX, Action::DETAIL)
-            ->setPermission(Action::NEW, 'ROLE_MARKEDIT')
-            ->setPermission(Action::EDIT, 'ROLE_MARKEDIT')
-            ->setPermission(Action::DELETE, 'ROLE_MARKEDIT')
+            ->setPermission(Action::NEW, 'ROLE_SPRZEDIT')
+            ->setPermission(Action::EDIT, 'ROLE_SPRZEDIT')
+            ->setPermission(Action::DELETE, 'ROLE_SPRZEDIT')
             //->remove(Crud::PAGE_INDEX, Action::EDIT)
         ;
     }

@@ -37,8 +37,6 @@ class InnKat3CrudController extends AbstractCrudController
             // can be a closure that defines two nullable arguments: entityInstance (which will
             // be null in 'index' and 'new' pages) and the current page name
 
-
-
             //pokazuje akcje w lini
             ->showEntityActionsInlined()
         ;

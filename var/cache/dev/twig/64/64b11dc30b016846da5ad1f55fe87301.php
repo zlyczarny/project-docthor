@@ -40,47 +40,50 @@ class __TwigTemplate_f12fbd6bff708fbf07ecf4415f99febc extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@EasyAdmin/crud/field/text_editor.html.twig"));
 
         // line 4
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 4, $this->source); })()), "crud", [], "any", false, false, false, 4), "currentAction", [], "any", false, false, false, 4) == "detail")) {
-            // line 5
+        echo "
+";
+        // line 5
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 5, $this->source); })()), "crud", [], "any", false, false, false, 5), "currentAction", [], "any", false, false, false, 5) == "detail")) {
+            // line 6
             echo "    ";
-            echo twig_nl2br(twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 5, $this->source); })()), "formattedValue", [], "any", false, false, false, 5), "html", null, true));
+            echo twig_nl2br(twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 6, $this->source); })()), "formattedValue", [], "any", false, false, false, 6), "html", null, true));
             echo "
 ";
         } else {
-            // line 7
-            echo "    ";
-            $context["html_id"] = ("ea-text-editor-" . twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 7, $this->source); })()), "uniqueId", [], "any", false, false, false, 7));
             // line 8
+            echo "    ";
+            $context["html_id"] = ("ea-text-editor-" . twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 8, $this->source); })()), "uniqueId", [], "any", false, false, false, 8));
+            // line 9
             echo "    <a href=\"#\" data-bs-toggle=\"modal\" data-bs-target=\"#";
-            echo twig_escape_filter($this->env, (isset($context["html_id"]) || array_key_exists("html_id", $context) ? $context["html_id"] : (function () { throw new RuntimeError('Variable "html_id" does not exist.', 8, $this->source); })()), "html", null, true);
+            echo twig_escape_filter($this->env, (isset($context["html_id"]) || array_key_exists("html_id", $context) ? $context["html_id"] : (function () { throw new RuntimeError('Variable "html_id" does not exist.', 9, $this->source); })()), "html", null, true);
             echo "\">
         <i class=\"far fa-file-alt\"></i> ";
-            // line 9
+            // line 10
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("field.text_editor.view_content", [], "EasyAdminBundle"), "html", null, true);
             echo "
     </a>
 
     <div class=\"modal fade\" id=\"";
-            // line 12
-            echo twig_escape_filter($this->env, (isset($context["html_id"]) || array_key_exists("html_id", $context) ? $context["html_id"] : (function () { throw new RuntimeError('Variable "html_id" does not exist.', 12, $this->source); })()), "html", null, true);
+            // line 13
+            echo twig_escape_filter($this->env, (isset($context["html_id"]) || array_key_exists("html_id", $context) ? $context["html_id"] : (function () { throw new RuntimeError('Variable "html_id" does not exist.', 13, $this->source); })()), "html", null, true);
             echo "\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
         <div class=\"modal-dialog modal-lg\" role=\"document\">
             <div class=\"modal-content\">
                 <div class=\"modal-header\">
                     <h5 class=\"modal-title\">";
-            // line 16
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 16, $this->source); })()), "label", [], "any", false, false, false, 16), "html", null, true);
+            // line 17
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 17, $this->source); })()), "label", [], "any", false, false, false, 17), "html", null, true);
             echo "</h5>
                     <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"";
-            // line 17
+            // line 18
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("action.close", [], "EasyAdminBundle"), "html", null, true);
             echo "\">
                     </button>
                 </div>
                 <div class=\"modal-body\">
                     ";
-            // line 21
-            echo twig_nl2br(twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 21, $this->source); })()), "formattedValue", [], "any", false, false, false, 21), "html", null, true));
+            // line 22
+            echo twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 22, $this->source); })()), "value", [], "any", false, false, false, 22);
             echo "
                 </div>
             </div>
@@ -108,7 +111,7 @@ class __TwigTemplate_f12fbd6bff708fbf07ecf4415f99febc extends Template
 
     public function getDebugInfo()
     {
-        return array (  83 => 21,  76 => 17,  72 => 16,  65 => 12,  59 => 9,  54 => 8,  51 => 7,  45 => 5,  43 => 4,);
+        return array (  86 => 22,  79 => 18,  75 => 17,  68 => 13,  62 => 10,  57 => 9,  54 => 8,  48 => 6,  46 => 5,  43 => 4,);
     }
 
     public function getSourceContext()
@@ -116,6 +119,7 @@ class __TwigTemplate_f12fbd6bff708fbf07ecf4415f99febc extends Template
         return new Source("{# @var ea \\EasyCorp\\Bundle\\EasyAdminBundle\\Context\\AdminContext #}
 {# @var field \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\FieldDto #}
 {# @var entity \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\EntityDto #}
+
 {% if ea.crud.currentAction == 'detail' %}
     {{ field.formattedValue|nl2br }}
 {% else %}
@@ -133,12 +137,11 @@ class __TwigTemplate_f12fbd6bff708fbf07ecf4415f99febc extends Template
                     </button>
                 </div>
                 <div class=\"modal-body\">
-                    {{ field.formattedValue|nl2br }}
+                    {{ field.value|raw }}
                 </div>
             </div>
         </div>
     </div>
-{% endif %}
-", "@EasyAdmin/crud/field/text_editor.html.twig", "C:\\xampp\\htdocs\\docthor\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\text_editor.html.twig");
+{% endif %}", "@EasyAdmin/crud/field/text_editor.html.twig", "C:\\xampp\\htdocs\\docthor\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\text_editor.html.twig");
     }
 }

@@ -20,5 +20,5 @@ Do poprawy:
 # zrobione - 3. Hierarcha roles - zmniejszenie ilosci uprawnień
 4. Dot. TODO 3 - formularz zmiany hasła?
 # zrobione - 5. Dodanie textu na start - dashboard
-6. Route prowadzący do /admin
-7. Poprawdzi znacznik <div> w texteditorfield
+# zrobione - 6. Route prowadzący do /admin
+# zrobione - 7. Poprawdzi znacznik <div> w texteditorfield

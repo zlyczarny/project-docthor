@@ -52,7 +52,6 @@ class DashboardController extends AbstractDashboardController
         // return $this->render('some/path/my-dashboard.html.twig');
     }
 
-    
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
@@ -88,9 +87,9 @@ class DashboardController extends AbstractDashboardController
                 MenuItem::linkToCrud('Dokumentacja', 'fa fa-list-ol', KsieKat3::class),
                     ]),
             MenuItem::subMenu('Kadry', 'fa fa-address-card')->setPermission("ROLE_KADR") ->setSubItems([
-                MenuItem::linkToCrud('Umowy', 'fa fa-copy', KadrKat3::class),
                 MenuItem::linkToCrud('Oferty', 'fas fa-tags', KadrKat1::class),
                 MenuItem::linkToCrud('Procedury', 'fa fa-align-left', KadrKat2::class),
+                MenuItem::linkToCrud('Umowy', 'fa fa-copy', KadrKat3::class),
                 MenuItem::linkToCrud('Dokumentacja', 'fa fa-list-ol', KadrKat4::class),
                             ]),
             MenuItem::section('Inne', 'fa fa-asterisk'),
@@ -99,11 +98,11 @@ class DashboardController extends AbstractDashboardController
                 MenuItem::linkToCrud('Instrukcje', 'fa fa-newspaper-o', InnKat3::class),
                 MenuItem::linkToCrud('Certyfikaty', 'fa fa-paper-plane', InnKat4::class),
             MenuItem::linkToLogout('Wyloguj', 'fa fa-sign-out'),
-            MenuItem::section('Administrator', 'fa fa-lock  ')->setPermission('ROLE_ADMIN'),
-                MenuItem::linkToCrud('Użytkownicy', 'fa fa-users', Users::class) ->setPermission('ROLE_ADMIN')
+            MenuItem::section('Administrator', 'fa fa-lock  ')->setPermission("ROLE_ADMIN"),
+                MenuItem::linkToCrud('Użytkownicy', 'fa fa-users', Users::class) ->setPermission("ROLE_ADMIN")
                                                               
     #   ikony dostępne na https://fontawesome.com/v4/icons/
-           // ...
+    
        ];
    }
 

@@ -76,7 +76,17 @@ class SprzKat2CrudController extends AbstractCrudController
 
         ];
     }    
-
+    public function configureActions(Actions $actions): Actions
+    {
+        return $actions
+            // ...
+            ->add(Crud::PAGE_INDEX, Action::DETAIL)
+            ->setPermission(Action::NEW, 'ROLE_SPRZEDIT')
+            ->setPermission(Action::EDIT, 'ROLE_SPRZEDIT')
+            ->setPermission(Action::DELETE, 'ROLE_SPRZEDIT')
+            //->remove(Crud::PAGE_INDEX, Action::EDIT)
+        ;
+    }
     /*
     public function configureFields(string $pageName): iterable
     {

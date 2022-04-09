@@ -37,11 +37,11 @@ class UsersCrudController extends AbstractCrudController
         }
 
         parent::persistEntity($entityManager, $entityInstance);
-
     }
-    /**
-         * @var UserPasswordEncoderInterface
-         */
+
+         /**
+        * @var UserPasswordEncoderInterface
+        */
         private $passwordEncoder;
     
         /**
@@ -85,9 +85,9 @@ class UsersCrudController extends AbstractCrudController
                     'Sprzedaż edycja' => 'ROLE_SPRZEDIT',
                     'Księgowość' => 'ROLE_KSIE',
                     'Księgowość edycja' => 'ROLE_KSIEEDIT',
-                    'Administrator' => 'ROLE_ADMIN',
                     'Marketing' => 'ROLE_MARK',
                     'Marketing edycja' => 'ROLE_MARKEDIT',
+                    'Administrator' => 'ROLE_ADMIN',
                     'Blokada konta' => 'ROLE_BLOK']),
                 BooleanField::new('aktywny') ->renderAsSwitch(false), //wyłącza przełącznik boola
                 $password,
@@ -143,4 +143,5 @@ class UsersCrudController extends AbstractCrudController
             ;
         }
     
+        
     }

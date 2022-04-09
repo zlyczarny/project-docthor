@@ -1,6 +1,7 @@
 {# @var ea \EasyCorp\Bundle\EasyAdminBundle\Context\AdminContext #}
 {# @var field \EasyCorp\Bundle\EasyAdminBundle\Dto\FieldDto #}
 {# @var entity \EasyCorp\Bundle\EasyAdminBundle\Dto\EntityDto #}
+
 {% if ea.crud.currentAction == 'detail' %}
     {{ field.formattedValue|nl2br }}
 {% else %}
@@ -18,7 +19,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    {{ field.formattedValue|nl2br }}
+                    {{ field.value|raw }}
                 </div>
             </div>
         </div>
