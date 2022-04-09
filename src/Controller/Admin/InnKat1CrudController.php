@@ -36,7 +36,6 @@ class InnKat1CrudController extends AbstractCrudController
             ->renderAsSwitch(false),
             IntegerField::new('werja','Wersja'),
             ImageField::new('image_name','Dokument')
-            ->hideOnIndex()
             ->setTemplatePath('podglad.html.twig')
             ->setBasePath('dokumenty/inne')
             ->setUploadDir('public/dokumenty/inne')

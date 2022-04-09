@@ -76,7 +76,6 @@ public function configureFields(string $pageName): iterable
         ->renderAsSwitch(false),
         IntegerField::new('wersja'),
         ImageField::new('image_name','Dokument')
-        ->hideOnIndex()
         ->setTemplatePath('podglad.html.twig')
         ->setBasePath('dokumenty/inne')
         ->setUploadDir('public/dokumenty/inne')

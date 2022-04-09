@@ -68,7 +68,7 @@ class UsersCrudController extends AbstractCrudController
             ->setFormType(PasswordType::class)
             ->setFormTypeOption('empty_data', '')
             ->setRequired(false)
-            ->setHelp('If the right is not given, leave the field blank.')
+            //->setHelp('If the right is not given, leave the field blank.')
             ->hideOnIndex();
     
             return [
@@ -143,5 +143,5 @@ class UsersCrudController extends AbstractCrudController
             ;
         }
     
-        
+
     }

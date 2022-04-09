@@ -4,15 +4,7 @@
 
 {% block body %}
 <form method="post">
-    {% if error %}
-        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-    {% endif %}
 
-    {% if app.user %}
-        <div class="mb-3">
-            You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
-        </div>
-    {% endif %}
     <center>
     <h1><img src="thor.png">DocThor</h1><br>
     <h3 class="h3 mb-3 font-weight-normal">Zaloguj się do DocThor</h3>
@@ -21,6 +13,16 @@
     <input type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" autocomplete="username" required autofocus><br></td></tr><tr><td>
     <label for="inputPassword">Hasło</label></td><td>
     <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required></td></tr></table>
+
+    {% if error %}
+        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    {% if app.user %}
+        <div class="mb-3">
+            Jesteś zalogowany jako {{ app.user.username }}, <a href="{{ path('app_logout') }}">Wyloguj</a>
+        </div>
+    {% endif %}
 
     <input type="hidden" name="_csrf_token"
            value="{{ csrf_token('authenticate') }}"

@@ -79,7 +79,6 @@ class KadrKat4CrudController extends AbstractCrudController
             ->renderAsSwitch(false),
             IntegerField::new('wersja'),
             ImageField::new('image_name','Dokument')
-            ->hideOnIndex()
             ->setTemplatePath('podglad.html.twig')
             ->setBasePath('dokumenty/kadry')
             ->setUploadDir('public/dokumenty/kadry')

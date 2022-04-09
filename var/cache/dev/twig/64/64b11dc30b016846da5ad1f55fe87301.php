@@ -40,15 +40,11 @@ class __TwigTemplate_f12fbd6bff708fbf07ecf4415f99febc extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@EasyAdmin/crud/field/text_editor.html.twig"));
 
         // line 4
-        echo "
-";
-        // line 5
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 5, $this->source); })()), "crud", [], "any", false, false, false, 5), "currentAction", [], "any", false, false, false, 5) == "detail")) {
-            // line 6
-            echo "    ";
-            echo twig_nl2br(twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 6, $this->source); })()), "formattedValue", [], "any", false, false, false, 6), "html", null, true));
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 4, $this->source); })()), "crud", [], "any", false, false, false, 4), "currentAction", [], "any", false, false, false, 4) == "detail")) {
+            // line 5
+            echo twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 5, $this->source); })()), "value", [], "any", false, false, false, 5);
             echo "
-";
+    ";
         } else {
             // line 8
             echo "    ";
@@ -111,7 +107,7 @@ class __TwigTemplate_f12fbd6bff708fbf07ecf4415f99febc extends Template
 
     public function getDebugInfo()
     {
-        return array (  86 => 22,  79 => 18,  75 => 17,  68 => 13,  62 => 10,  57 => 9,  54 => 8,  48 => 6,  46 => 5,  43 => 4,);
+        return array (  82 => 22,  75 => 18,  71 => 17,  64 => 13,  58 => 10,  53 => 9,  50 => 8,  45 => 5,  43 => 4,);
     }
 
     public function getSourceContext()
@@ -119,9 +115,9 @@ class __TwigTemplate_f12fbd6bff708fbf07ecf4415f99febc extends Template
         return new Source("{# @var ea \\EasyCorp\\Bundle\\EasyAdminBundle\\Context\\AdminContext #}
 {# @var field \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\FieldDto #}
 {# @var entity \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\EntityDto #}
-
 {% if ea.crud.currentAction == 'detail' %}
-    {{ field.formattedValue|nl2br }}
+{{ field.value|raw }}
+    {# {{ field.formattedValue|nl2br }} #}
 {% else %}
     {% set html_id = 'ea-text-editor-' ~ field.uniqueId %}
     <a href=\"#\" data-bs-toggle=\"modal\" data-bs-target=\"#{{ html_id }}\">

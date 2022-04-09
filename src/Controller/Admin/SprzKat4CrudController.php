@@ -66,7 +66,6 @@ class SprzKat4CrudController extends AbstractCrudController
             ->renderAsSwitch(false),
             IntegerField::new('wersja'),
             ImageField::new('image_name','Dokument')
-            ->hideOnIndex()
             ->setTemplatePath('podglad.html.twig')
             ->setBasePath('dokumenty/sprzedaz')
             ->setUploadDir('public/dokumenty/sprzedaz')

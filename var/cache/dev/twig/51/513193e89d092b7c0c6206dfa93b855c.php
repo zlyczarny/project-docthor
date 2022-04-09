@@ -39,22 +39,45 @@ class __TwigTemplate_76d58a503b56655155a8a20448cc8982 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "podglad.html.twig"));
 
-        // line 1
-        echo " ";
-        // line 11
+        // line 4
         echo "
 
 <a href=\"";
-        // line 13
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 13, $this->source); })()), "formattedValue", [], "any", false, false, false, 13), "html", null, true);
+        // line 6
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 6, $this->source); })()), "formattedValue", [], "any", false, false, false, 6), "html", null, true);
         echo "\"><i class=\"fa fa-download\" aria-hidden=\"true\"></i>
 Pobierz</a><br>
 
 
-<embed src=\"";
-        // line 17
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 17, $this->source); })()), "formattedValue", [], "any", false, false, false, 17), "html", null, true);
-        echo "\" width=\"80%\" height=\"600\" >";
+";
+        // line 11
+        echo "
+    ";
+        // line 12
+        $context["html_id"] = ("ea-text-editor-" . twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 12, $this->source); })()), "uniqueId", [], "any", false, false, false, 12));
+        // line 13
+        echo "    <a href=\"#\" data-bs-toggle=\"modal\" data-bs-target=\"#";
+        echo twig_escape_filter($this->env, (isset($context["html_id"]) || array_key_exists("html_id", $context) ? $context["html_id"] : (function () { throw new RuntimeError('Variable "html_id" does not exist.', 13, $this->source); })()), "html", null, true);
+        echo "\">
+        <i class=\"far fa-file-alt\"></i> Podgląd  </a>
+
+    <div class=\"modal fade\" id=\"";
+        // line 16
+        echo twig_escape_filter($this->env, (isset($context["html_id"]) || array_key_exists("html_id", $context) ? $context["html_id"] : (function () { throw new RuntimeError('Variable "html_id" does not exist.', 16, $this->source); })()), "html", null, true);
+        echo "\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
+        <div class=\"modal-dialog modal-lg\" role=\"document\">
+            <div class=\"modal-content\">
+
+                <div class=\"modal-body\">
+                    <embed src=\"";
+        // line 21
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 21, $this->source); })()), "formattedValue", [], "any", false, false, false, 21), "html", null, true);
+        echo "\" width=\"100%\" height=\"600\" >
+                </div>
+            </div>
+        </div>
+    </div>
+";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -75,27 +98,36 @@ Pobierz</a><br>
 
     public function getDebugInfo()
     {
-        return array (  56 => 17,  49 => 13,  45 => 11,  43 => 1,);
+        return array (  74 => 21,  66 => 16,  59 => 13,  57 => 12,  54 => 11,  47 => 6,  43 => 4,);
     }
 
     public function getSourceContext()
     {
-        return new Source(" {#{{} dump() }}
-
-<style>
-ul li{
-    display:none;
-}
-ul li:hover li{
-    display: block;
-}
-</style>#}
+        return new Source("{#
+ {{ dump() }}
+#}
 
 
 <a href=\"{{ field.formattedValue }}\"><i class=\"fa fa-download\" aria-hidden=\"true\"></i>
 Pobierz</a><br>
 
 
-<embed src=\"{{ field.formattedValue }}\" width=\"80%\" height=\"600\" >", "podglad.html.twig", "C:\\xampp\\htdocs\\docthor\\templates\\podglad.html.twig");
+{# Podgląd #}
+
+    {% set html_id = 'ea-text-editor-' ~ field.uniqueId %}
+    <a href=\"#\" data-bs-toggle=\"modal\" data-bs-target=\"#{{ html_id }}\">
+        <i class=\"far fa-file-alt\"></i> Podgląd  </a>
+
+    <div class=\"modal fade\" id=\"{{ html_id }}\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
+        <div class=\"modal-dialog modal-lg\" role=\"document\">
+            <div class=\"modal-content\">
+
+                <div class=\"modal-body\">
+                    <embed src=\"{{ field.formattedValue }}\" width=\"100%\" height=\"600\" >
+                </div>
+            </div>
+        </div>
+    </div>
+", "podglad.html.twig", "C:\\xampp\\htdocs\\docthor\\templates\\podglad.html.twig");
     }
 }

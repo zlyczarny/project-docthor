@@ -56,6 +56,10 @@ class __TwigTemplate_68790c4ef61ac6bbec50c31383e196b0 extends Template
     z-index: 99999;
 }
 
+.alert {
+  color:red;
+}
+
 .sf-minitoolbar button {
     background-color: transparent;
     padding: 0;
@@ -260,41 +264,41 @@ div.sf-toolbar .sf-toolbar-block a:hover {
 
 .sf-toolbar-block .sf-toolbar-status-green {
     background-color: ";
-        // line 220
-        echo twig_get_attribute($this->env, $this->source, (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new RuntimeError('Variable "colors" does not exist.', 220, $this->source); })()), "success", [], "any", false, false, false, 220);
+        // line 224
+        echo twig_get_attribute($this->env, $this->source, (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new RuntimeError('Variable "colors" does not exist.', 224, $this->source); })()), "success", [], "any", false, false, false, 224);
         echo ";
 }
 .sf-toolbar-block .sf-toolbar-status-red {
     background-color: ";
-        // line 223
-        echo twig_get_attribute($this->env, $this->source, (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new RuntimeError('Variable "colors" does not exist.', 223, $this->source); })()), "error", [], "any", false, false, false, 223);
+        // line 227
+        echo twig_get_attribute($this->env, $this->source, (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new RuntimeError('Variable "colors" does not exist.', 227, $this->source); })()), "error", [], "any", false, false, false, 227);
         echo ";
 }
 .sf-toolbar-block .sf-toolbar-status-yellow {
     background-color: ";
-        // line 226
-        echo twig_get_attribute($this->env, $this->source, (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new RuntimeError('Variable "colors" does not exist.', 226, $this->source); })()), "warning", [], "any", false, false, false, 226);
+        // line 230
+        echo twig_get_attribute($this->env, $this->source, (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new RuntimeError('Variable "colors" does not exist.', 230, $this->source); })()), "warning", [], "any", false, false, false, 230);
         echo ";
 }
 
 .sf-toolbar-block.sf-toolbar-status-green {
     background-color: ";
-        // line 230
-        echo twig_get_attribute($this->env, $this->source, (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new RuntimeError('Variable "colors" does not exist.', 230, $this->source); })()), "success", [], "any", false, false, false, 230);
+        // line 234
+        echo twig_get_attribute($this->env, $this->source, (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new RuntimeError('Variable "colors" does not exist.', 234, $this->source); })()), "success", [], "any", false, false, false, 234);
         echo ";
     color: #FFF;
 }
 .sf-toolbar-block.sf-toolbar-status-red {
     background-color: ";
-        // line 234
-        echo twig_get_attribute($this->env, $this->source, (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new RuntimeError('Variable "colors" does not exist.', 234, $this->source); })()), "error", [], "any", false, false, false, 234);
+        // line 238
+        echo twig_get_attribute($this->env, $this->source, (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new RuntimeError('Variable "colors" does not exist.', 238, $this->source); })()), "error", [], "any", false, false, false, 238);
         echo ";
     color: #FFF;
 }
 .sf-toolbar-block.sf-toolbar-status-yellow {
     background-color: ";
-        // line 238
-        echo twig_get_attribute($this->env, $this->source, (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new RuntimeError('Variable "colors" does not exist.', 238, $this->source); })()), "warning", [], "any", false, false, false, 238);
+        // line 242
+        echo twig_get_attribute($this->env, $this->source, (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new RuntimeError('Variable "colors" does not exist.', 242, $this->source); })()), "warning", [], "any", false, false, false, 242);
         echo ";
     color: #FFF;
 }
@@ -619,6 +623,164 @@ div.sf-toolbar .sf-toolbar-block a:hover {
     .sf-toolbar {
         display: none !important;
     }
+
+/***** test *****/
+body {
+  background-color: #9f9da7;
+  font-size: 1.6rem;
+  font-family: \"Open Sans\", sans-serif;
+  color: #2b3e51;
+}
+
+h2 {
+  font-weight: 300;
+  text-align: center;
+}
+
+p {
+  position: relative;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: #3ca9e2;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+a:focus, a:hover,
+a:link:focus,
+a:link:hover,
+a:visited:focus,
+a:visited:hover,
+a:active:focus,
+a:active:hover {
+  color: #329dd5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#login-form-wrap {
+  background-color: #fff;
+  width: 35%;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px 0 0 0;
+  border-radius: 4px;
+  box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+#login-form {
+  padding: 0 60px;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 4px;
+}
+
+input[type=\"text\"],
+input[type=\"email\"] {
+  width: 100%;
+  padding: 0 0 0 10px;
+  margin: 0;
+  color: #8a8b8e;
+  border: 1px solid #c2c0ca;
+  font-style: normal;
+  font-size: 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  display: inline-block;
+  background: none;
+}
+input[type=\"text\"]:focus,
+input[type=\"email\"]:focus {
+  border-color: #3ca9e2;
+}
+input[type=\"text\"]:focus:invalid,
+input[type=\"email\"]:focus:invalid {
+  color: #cc1e2b;
+  border-color: #cc1e2b;
+}
+input[type=\"text\"]:valid ~ .validation,
+input[type=\"email\"]:valid ~ .validation {
+  display: block;
+  border-color: #0C0;
+}
+input[type=\"text\"]:valid ~ .validation span,
+input[type=\"email\"]:valid ~ .validation span {
+  background: #0C0;
+  position: absolute;
+  border-radius: 6px;
+}
+input[type=\"text\"]:valid ~ .validation span:first-child,
+input[type=\"email\"]:valid ~ .validation span:first-child {
+  top: 30px;
+  left: 14px;
+  width: 20px;
+  height: 3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+input[type=\"text\"]:valid ~ .validation span:last-child,
+input[type=\"email\"]:valid ~ .validation span:last-child {
+  top: 35px;
+  left: 8px;
+  width: 11px;
+  height: 3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.validation {
+  display: none;
+  position: absolute;
+  content: \" \";
+  height: 60px;
+  width: 30px;
+  right: 15px;
+  top: 0px;
+}
+
+input[type=\"submit\"] {
+  border: none;
+  display: block;
+  background-color: #3ca9e2;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+input[type=\"submit\"]:hover {
+  background-color: #329dd5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#create-account-wrap {
+  background-color: #eeedf1;
+  color: #8a8b8e;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 0 0 4px 4px;
+}
+
 }
 ";
         
@@ -641,7 +803,7 @@ div.sf-toolbar .sf-toolbar-block a:hover {
 
     public function getDebugInfo()
     {
-        return array (  297 => 238,  290 => 234,  283 => 230,  276 => 226,  270 => 223,  264 => 220,  45 => 3,  43 => 2,);
+        return array (  301 => 242,  294 => 238,  287 => 234,  280 => 230,  274 => 227,  268 => 224,  45 => 3,  43 => 2,);
     }
 
     public function getSourceContext()
@@ -660,6 +822,10 @@ div.sf-toolbar .sf-toolbar-block a:hover {
     position: fixed;
     right: 0;
     z-index: 99999;
+}
+
+.alert {
+  color:red;
 }
 
 .sf-minitoolbar button {
@@ -1207,7 +1373,165 @@ div.sf-toolbar .sf-toolbar-block a:hover {
     .sf-toolbar {
         display: none !important;
     }
+
+/***** test *****/
+body {
+  background-color: #9f9da7;
+  font-size: 1.6rem;
+  font-family: \"Open Sans\", sans-serif;
+  color: #2b3e51;
 }
-", "@WebProfiler/Profiler/toolbar.css.twig", "D:\\Pobrane\\project-docthor2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar.css.twig");
+
+h2 {
+  font-weight: 300;
+  text-align: center;
+}
+
+p {
+  position: relative;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: #3ca9e2;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+a:focus, a:hover,
+a:link:focus,
+a:link:hover,
+a:visited:focus,
+a:visited:hover,
+a:active:focus,
+a:active:hover {
+  color: #329dd5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#login-form-wrap {
+  background-color: #fff;
+  width: 35%;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px 0 0 0;
+  border-radius: 4px;
+  box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+#login-form {
+  padding: 0 60px;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 4px;
+}
+
+input[type=\"text\"],
+input[type=\"email\"] {
+  width: 100%;
+  padding: 0 0 0 10px;
+  margin: 0;
+  color: #8a8b8e;
+  border: 1px solid #c2c0ca;
+  font-style: normal;
+  font-size: 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  display: inline-block;
+  background: none;
+}
+input[type=\"text\"]:focus,
+input[type=\"email\"]:focus {
+  border-color: #3ca9e2;
+}
+input[type=\"text\"]:focus:invalid,
+input[type=\"email\"]:focus:invalid {
+  color: #cc1e2b;
+  border-color: #cc1e2b;
+}
+input[type=\"text\"]:valid ~ .validation,
+input[type=\"email\"]:valid ~ .validation {
+  display: block;
+  border-color: #0C0;
+}
+input[type=\"text\"]:valid ~ .validation span,
+input[type=\"email\"]:valid ~ .validation span {
+  background: #0C0;
+  position: absolute;
+  border-radius: 6px;
+}
+input[type=\"text\"]:valid ~ .validation span:first-child,
+input[type=\"email\"]:valid ~ .validation span:first-child {
+  top: 30px;
+  left: 14px;
+  width: 20px;
+  height: 3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+input[type=\"text\"]:valid ~ .validation span:last-child,
+input[type=\"email\"]:valid ~ .validation span:last-child {
+  top: 35px;
+  left: 8px;
+  width: 11px;
+  height: 3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.validation {
+  display: none;
+  position: absolute;
+  content: \" \";
+  height: 60px;
+  width: 30px;
+  right: 15px;
+  top: 0px;
+}
+
+input[type=\"submit\"] {
+  border: none;
+  display: block;
+  background-color: #3ca9e2;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+input[type=\"submit\"]:hover {
+  background-color: #329dd5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#create-account-wrap {
+  background-color: #eeedf1;
+  color: #8a8b8e;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 0 0 4px 4px;
+}
+
+}
+", "@WebProfiler/Profiler/toolbar.css.twig", "C:\\xampp\\htdocs\\docthor\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar.css.twig");
     }
 }
