@@ -78,9 +78,16 @@ class UsersCrudController extends AbstractCrudController
                 TextField::new('nazwisko'),
                 TextField::new('username', 'Nazwa użytkownika')->hideOnIndex(),
                 TextField::new('stanowisko'),
+                ChoiceField::new('dzial','Dział')->setChoices([
+                    'Kadry' => 'Kadry',
+                    'Sprzedaż' => 'Sprzedaz',
+                    'Zarząd'=> 'Zarzad',
+                    'Księgowość' => 'Ksiegowosc',
+                    'Marketing'=> 'Marketing',
+                    'IT'=> 'IT']),
                 EmailField::new('email'),
                 DateField::new('rejestracja'),
-                ChoiceField::new('roles')->allowMultipleChoices()->setChoices([
+                ChoiceField::new('roles', 'Uprawnienia')->allowMultipleChoices()->setChoices([
                     'Kadry' => 'ROLE_KADR',
                     'Kadry edycja' => 'ROLE_KADREDIT',
                     'Sprzedaż' => 'ROLE_SPRZ',
@@ -139,6 +146,7 @@ class UsersCrudController extends AbstractCrudController
         {
             return $filters
                 ->add('username')
+                ->add('dzial')
                 ->add('aktywny')
                 ->add('rejestracja')
                 ->add('email')

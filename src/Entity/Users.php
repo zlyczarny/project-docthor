@@ -177,6 +177,9 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(type: 'string', length: 255)]
     private $stanowisko;
 
+    #[ORM\Column(type: 'string', length: 255)]
+    private $dzial;
+
     /**
      * @return string
      */
@@ -226,6 +229,18 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
     public function setStanowisko(string $stanowisko): self
     {
         $this->stanowisko = $stanowisko;
+
+        return $this;
+    }
+
+    public function getDzial(): ?string
+    {
+        return $this->dzial;
+    }
+
+    public function setDzial(string $dzial): self
+    {
+        $this->dzial = $dzial;
 
         return $this;
     }
