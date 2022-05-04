@@ -130,8 +130,11 @@ class __TwigTemplate_573f5a7ac99f7b0fa65bac2f9b88f0a8 extends Template
            value=\"";
         // line 28
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
-        echo "\"
-    >
+        echo "\">
+    <a href=\"";
+        // line 29
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_forgot_password_request");
+        echo "\">Zapomniałem hasła</a><br>
 
     ";
         // line 41
@@ -139,7 +142,8 @@ class __TwigTemplate_573f5a7ac99f7b0fa65bac2f9b88f0a8 extends Template
     <button class=\"btn btn-lg btn-primary\" type=\"submit\">
         Zaloguj
     </button>
-</form></center>
+</form>
+</center>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -161,7 +165,7 @@ class __TwigTemplate_573f5a7ac99f7b0fa65bac2f9b88f0a8 extends Template
 
     public function getDebugInfo()
     {
-        return array (  138 => 41,  132 => 28,  128 => 26,  120 => 23,  117 => 22,  115 => 21,  112 => 20,  106 => 18,  104 => 17,  97 => 13,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  141 => 41,  136 => 29,  132 => 28,  128 => 26,  120 => 23,  117 => 22,  115 => 21,  112 => 20,  106 => 18,  104 => 17,  97 => 13,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -193,8 +197,8 @@ class __TwigTemplate_573f5a7ac99f7b0fa65bac2f9b88f0a8 extends Template
     {% endif %}
 
     <input type=\"hidden\" name=\"_csrf_token\"
-           value=\"{{ csrf_token('authenticate') }}\"
-    >
+           value=\"{{ csrf_token('authenticate') }}\">
+    <a href=\"{{ path('app_forgot_password_request') }}\">Zapomniałem hasła</a><br>
 
     {#
         Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
@@ -210,8 +214,9 @@ class __TwigTemplate_573f5a7ac99f7b0fa65bac2f9b88f0a8 extends Template
     <button class=\"btn btn-lg btn-primary\" type=\"submit\">
         Zaloguj
     </button>
-</form></center>
+</form>
+</center>
 {% endblock %}
-", "security/login.html.twig", "C:\\xampp\\htdocs\\docthor\\templates\\security\\login.html.twig");
+", "security/login.html.twig", "C:\\xampp\\htdocs\\docthor — kopia (2)\\templates\\security\\login.html.twig");
     }
 }

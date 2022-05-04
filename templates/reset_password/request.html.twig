@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Docthor - resetuj hasło{% endblock %}
+
+{% block body %}
+    {% for flash_error in app.flashes('reset_password_error') %}
+        <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+    {% endfor %}
+    <center>
+    <h1><img src="../thor.png">DocThor</h1>
+    <h3 class="h3 mb-3 font-weight-normal">Zresetuj hasło</h3>
+    
+    Wprowadź adres email połączony z twoim kontem w celu otrzymania wiadomości resetujacej hasło.<br>
+
+
+    {{ form_start(requestForm) }} <br>
+        {{ form_row(requestForm.email) }}
+        
+<br>
+        <button class="btn btn-primary">Wyślij link</button>
+    {{ form_end(requestForm) }} </center>
+{% endblock %}

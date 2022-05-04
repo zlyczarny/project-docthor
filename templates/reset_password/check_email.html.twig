@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Docthor - Link zmiany hasła został wysłany{% endblock %}
+
+{% block body %}
+      <center>
+    <h1><img src="../thor.png">DocThor</h1>
+    <h3 class="h3 mb-3 font-weight-normal">Zresetuj hasło</h3>
+   
+    <p>
+        Jeżeli istnieje konto połączone z podanym adresem email, zostanie wysłana wiaodmość email zawierający link resetowania hasła.
+        Link przedawni się za {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.
+    </p>
+    <p>Jeśli nie widzisz wiadomości email, sprawdź folder SPAM lub <a href="{{ path('app_forgot_password_request') }}">spróbuj ponownie</a>.</p>
+{% endblock %}

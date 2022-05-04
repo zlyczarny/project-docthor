@@ -270,6 +270,6 @@ class __TwigTemplate_b5abb2d41e87aabf549fd20b84549bf0 extends Template
     </div>
 {%- endblock -%}
 
-", "@VichUploader/Form/fields.html.twig", "C:\\xampp\\htdocs\\docthor\\vendor\\vich\\uploader-bundle\\templates\\Form\\fields.html.twig");
+", "@VichUploader/Form/fields.html.twig", "C:\\xampp\\htdocs\\docthor — kopia (2)\\vendor\\vich\\uploader-bundle\\templates\\Form\\fields.html.twig");
     }
 }

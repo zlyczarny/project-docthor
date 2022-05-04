@@ -138,6 +138,6 @@ class __TwigTemplate_f12fbd6bff708fbf07ecf4415f99febc extends Template
             </div>
         </div>
     </div>
-{% endif %}", "@EasyAdmin/crud/field/text_editor.html.twig", "C:\\xampp\\htdocs\\docthor\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\text_editor.html.twig");
+{% endif %}", "@EasyAdmin/crud/field/text_editor.html.twig", "C:\\xampp\\htdocs\\docthor — kopia (2)\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\text_editor.html.twig");
     }
 }

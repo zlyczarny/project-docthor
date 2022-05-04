@@ -17,7 +17,7 @@ class RateLimiterConfig
     private $limiters;
     
     /**
-     * @default false
+     * @default true
      * @param ParamConfigurator|bool $value
      * @return $this
      */

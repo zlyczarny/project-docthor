@@ -291,6 +291,6 @@ class __TwigTemplate_e30cf2e17763012dd46ad2f49e11dc01 extends Template
         </tbody>
     </table>
 {% endblock %}
-", "@VichUploader/Collector/mapping_collector.html.twig", "D:\\Pobrane\\project-docthor2\\vendor\\vich\\uploader-bundle\\templates\\Collector\\mapping_collector.html.twig");
+", "@VichUploader/Collector/mapping_collector.html.twig", "C:\\xampp\\htdocs\\docthor — kopia (2)\\vendor\\vich\\uploader-bundle\\templates\\Collector\\mapping_collector.html.twig");
     }
 }

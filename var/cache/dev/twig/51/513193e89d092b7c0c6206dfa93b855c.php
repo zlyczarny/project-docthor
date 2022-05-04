@@ -130,6 +130,6 @@ Pobierz</a><br>
             </div>
         </div>
     </div>
-", "podglad.html.twig", "C:\\xampp\\htdocs\\docthor\\templates\\podglad.html.twig");
+", "podglad.html.twig", "C:\\xampp\\htdocs\\docthor — kopia (2)\\templates\\podglad.html.twig");
     }
 }

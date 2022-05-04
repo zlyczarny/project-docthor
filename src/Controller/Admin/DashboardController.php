@@ -97,9 +97,11 @@ class DashboardController extends AbstractDashboardController
                 MenuItem::linkToCrud('Szablony', 'fa fa-envelope', InnKat2::class),
                 MenuItem::linkToCrud('Instrukcje', 'fa fa-newspaper-o', InnKat3::class),
                 MenuItem::linkToCrud('Certyfikaty', 'fa fa-paper-plane', InnKat4::class),
-            MenuItem::linkToLogout('Wyloguj', 'fa fa-sign-out'),
-            MenuItem::section('Administrator', 'fa fa-lock ')->setPermission("ROLE_UZYT"),
-                MenuItem::linkToCrud('Użytkownicy', 'fa fa-users', Users::class) ->setPermission("ROLE_UZYT")
+            MenuItem::section('Opcje', 'fa fa-lock'),
+            MenuItem::linkToCrud('Użytkownicy', 'fa fa-users', Users::class) ->setPermission("ROLE_UZYT"),
+            MenuItem::linkToRoute('Zmień hasło', 'fa fa-key', 'app_forgot_password_request'),
+            MenuItem::linkToLogout('Wyloguj', 'fa fa-sign-out')
+
                                                               
     #   ikony dostępne na https://fontawesome.com/v4/icons/
     

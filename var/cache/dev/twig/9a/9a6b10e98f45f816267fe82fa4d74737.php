@@ -68,7 +68,7 @@ class __TwigTemplate_66b1479f4e2cb8dac86a9e2f00fe43b0 extends Template
         ";
         // line 17
         $this->displayBlock('body', $context, $blocks);
-        // line 18
+        // line 21
         echo "    </body>
 </html>
 ";
@@ -90,7 +90,7 @@ class __TwigTemplate_66b1479f4e2cb8dac86a9e2f00fe43b0 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Welcome!";
+        echo "Docthor!";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -155,6 +155,10 @@ class __TwigTemplate_66b1479f4e2cb8dac86a9e2f00fe43b0 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
+        // line 18
+        echo "    
+    <h1><img src=\"thor.png\">DocThor</h1><br>
+        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -170,7 +174,7 @@ class __TwigTemplate_66b1479f4e2cb8dac86a9e2f00fe43b0 extends Template
 
     public function getDebugInfo()
     {
-        return array (  149 => 17,  136 => 13,  126 => 12,  113 => 9,  103 => 8,  84 => 5,  72 => 18,  70 => 17,  66 => 15,  64 => 12,  61 => 11,  58 => 8,  53 => 5,  47 => 1,);
+        return array (  159 => 18,  149 => 17,  136 => 13,  126 => 12,  113 => 9,  103 => 8,  84 => 5,  72 => 21,  70 => 17,  66 => 15,  64 => 12,  61 => 11,  58 => 8,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -179,7 +183,7 @@ class __TwigTemplate_66b1479f4e2cb8dac86a9e2f00fe43b0 extends Template
 <html>
     <head>
         <meta charset=\"UTF-8\">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Docthor!{% endblock %}</title>
         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
@@ -191,9 +195,12 @@ class __TwigTemplate_66b1479f4e2cb8dac86a9e2f00fe43b0 extends Template
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+    
+    <h1><img src=\"thor.png\">DocThor</h1><br>
+        {% endblock %}
     </body>
 </html>
-", "base.html.twig", "C:\\xampp\\htdocs\\docthor\\templates\\base.html.twig");
+", "base.html.twig", "C:\\xampp\\htdocs\\docthor — kopia (2)\\templates\\base.html.twig");
     }
 }

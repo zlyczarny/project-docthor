@@ -25,8 +25,8 @@
     {% endif %}
 
     <input type="hidden" name="_csrf_token"
-           value="{{ csrf_token('authenticate') }}"
-    >
+           value="{{ csrf_token('authenticate') }}">
+    <a href="{{ path('app_forgot_password_request') }}">Zapomniałem hasła</a><br>
 
     {#
         Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
@@ -42,5 +42,6 @@
     <button class="btn btn-lg btn-primary" type="submit">
         Zaloguj
     </button>
-</form></center>
+</form>
+</center>
 {% endblock %}
