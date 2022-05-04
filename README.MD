@@ -16,13 +16,16 @@ https://github.com/SymfonyCasts/reset-password-bundle
 
 Do poprawy:
 
-# zrobione - 1. Zablokowanie widoczności kategori po wejściu w ukryty link
+
 2. Problem z file_size can't be null przy dodawaniu pliku
-# zrobione - 3. Hierarcha roles - zmniejszenie ilosci uprawnień
 4. Dot. TODO 3 - formularz zmiany hasła?
-# zrobione - 5. Dodanie textu na start - dashboard
-# zrobione - 6. Route prowadzący do /admin
-# zrobione - 7. Poprawdzi znacznik <div> w texteditorfield
-8. Slugi - skrócenie adresów
 9. DOT TODO 4 - zmiana hierarchi dostępowej do crud użytkownicy
 10. Uruchomić apke na hostingu
+
+
+- zrobione - 1. Zablokowanie widoczności kategori po wejściu w ukryty link
+- zrobione - 3. Hierarcha roles - zmniejszenie ilosci uprawnień
+- zrobione - 5. Dodanie textu na start - dashboard
+- zrobione - 6. Route prowadzący do /admin
+- zrobione - 7. Poprawdzi znacznik <div> w texteditorfield
+- Slugi/routing - skrócenie adresów - niemożliwe w easyadmin

@@ -9,6 +9,8 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\BooleanField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\EmailField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ChoiceField;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Action;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Actions;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
@@ -74,7 +76,7 @@ class UsersCrudController extends AbstractCrudController
             return [
                 TextField::new('imie'),
                 TextField::new('nazwisko'),
-                TextField::new('username', 'Nazwa użytkownika'),
+                TextField::new('username', 'Nazwa użytkownika')->hideOnIndex(),
                 TextField::new('stanowisko'),
                 EmailField::new('email'),
                 DateField::new('rejestracja'),
@@ -123,7 +125,7 @@ class UsersCrudController extends AbstractCrudController
                 ->setEntityLabelInPlural('Użytkownicy')
                 ->setPageTitle('index', 'Lista Użytkowników')
                 ->setPageTitle('detail', fn (Users $nazwa) => (string) $username)
-                ->setEntityPermission('ROLE_ADMIN')
+                ->setEntityPermission('ROLE_UZYT')
                 // in addition to a string, the argument of the singular and plural label methods
                 // can be a closure that defines two nullable arguments: entityInstance (which will
                 // be null in 'index' and 'new' pages) and the current page name
@@ -142,6 +144,17 @@ class UsersCrudController extends AbstractCrudController
                 ->add('email')
             ;
         }
+
+        public function configureActions(Actions $actions): Actions
+    {
+        return $actions
+
+            ->setPermission(Action::NEW, 'ROLE_ADMIN')
+            ->setPermission(Action::EDIT, 'ROLE_ADMIN')
+            ->setPermission(Action::DELETE, 'ROLE_ADMIN')
+            //->remove(Crud::PAGE_INDEX, Action::EDIT)
+        ;
+    }
     
 
     }

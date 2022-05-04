@@ -252,22 +252,27 @@
         <parameter>ROLE_KSIEEDIT</parameter>
         <parameter>ROLE_INNEDIT</parameter>
         <parameter>ROLE_MARKEDIT</parameter>
+        <parameter>ROLE_UZYT</parameter>
       </parameter>
       <parameter key="ROLE_KADREDIT" type="collection">
         <parameter>ROLE_KADR</parameter>
         <parameter>ROLE_INNEDIT</parameter>
+        <parameter>ROLE_UZYT</parameter>
       </parameter>
       <parameter key="ROLE_SPRZEDIT" type="collection">
         <parameter>ROLE_SPRZ</parameter>
         <parameter>ROLE_INNEDIT</parameter>
+        <parameter>ROLE_UZYT</parameter>
       </parameter>
       <parameter key="ROLE_KSIEEDIT" type="collection">
         <parameter>ROLE_KSIE</parameter>
         <parameter>ROLE_INNEDIT</parameter>
+        <parameter>ROLE_UZYT</parameter>
       </parameter>
       <parameter key="ROLE_MARKEDIT" type="collection">
         <parameter>ROLE_MARK</parameter>
         <parameter>ROLE_INNEDIT</parameter>
+        <parameter>ROLE_UZYT</parameter>
       </parameter>
     </parameter>
     <parameter key="security.access.denied_url">null</parameter>
@@ -7531,7 +7536,7 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.ZHpzD0b" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.C3rabqK" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\Admin\DashboardController::configureUserMenu" type="service_closure" id=".service_locator.st3ASTR"/>
@@ -9122,12 +9127,12 @@
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.ZHpzD0b"/>
+      <argument type="service" id=".service_locator.C3rabqK"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.ZHpzD0b"/>
+      <argument type="service" id=".service_locator.C3rabqK"/>
     </service>
     <service id=".debug.http_client.inner" class="Symfony\Contracts\HttpClient\HttpClientInterface">
       <argument type="collection"/>
@@ -10065,7 +10070,7 @@
     <service id="Vich\UploaderBundle\Form\Type\VichImageType" alias="vich_uploader.form.type.image"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.ZHpzD0b"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.C3rabqK"/>
     <service id="session" alias=".session.do-not-use" public="true">
       <deprecated package="symfony/framework-bundle" version="5.3">The "%alias_id%" service and "SessionInterface" alias are deprecated, use "$requestStack-&gt;getSession()" instead.</deprecated>
     </service>
@@ -10090,7 +10095,7 @@
     <service id=".service_locator.nTL_G5r" alias=".service_locator.esmk6IF"/>
     <service id=".service_locator.hNls88j" alias=".service_locator.ENGuM7_"/>
     <service id=".service_locator.6rNHno." alias=".service_locator.riFbGaB"/>
-    <service id=".service_locator.BUq8wx9" alias=".service_locator.ZHpzD0b"/>
+    <service id=".service_locator.BUq8wx9" alias=".service_locator.C3rabqK"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.vVpzt1R" alias=".service_locator.aBY2nV1"/>
     <service id=".service_locator.WFnqBbm" alias=".service_locator.FtP_67."/>
