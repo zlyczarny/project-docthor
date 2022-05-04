@@ -931,3 +931,16 @@ d69d27,127.0.0.1,GET,http://127.0.0.1:8000/admin?crudAction=index&crudController
 0ff657,127.0.0.1,POST,http://127.0.0.1:8000/login,1651658666,,302
 bb6fba,127.0.0.1,GET,http://127.0.0.1:8000/admin,1651658666,,200
 2c7b0e,127.0.0.1,GET,http://127.0.0.1:8000/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CUsersCrudController&menuIndex=12&signature=YYa_0oWFxtxclZbDCp0OTG74rwElEHkWszSQHb2Wx6M&submenuIndex=-1,1651658668,,200
+5f2259,127.0.0.1,GET,http://127.0.0.1:8000/admin?menuIndex=0&signature=Xcud4_-TIe8c61uFlX5Lco4oY9ugvfX3h532YjnvIsw&submenuIndex=-1,1651658822,,200
+3740cd,127.0.0.1,GET,http://127.0.0.1:8000/logout,1651659820,,302
+9b92c3,127.0.0.1,GET,http://127.0.0.1:8000/login,1651659820,,200
+02cd1f,127.0.0.1,POST,http://127.0.0.1:8000/login,1651659825,,302
+a65551,127.0.0.1,GET,http://127.0.0.1:8000/login,1651659825,,200
+56c0f4,127.0.0.1,POST,http://127.0.0.1:8000/login,1651659829,,302
+6d755c,127.0.0.1,GET,http://127.0.0.1:8000/login,1651659829,,200
+c9e752,127.0.0.1,POST,http://127.0.0.1:8000/login,1651659831,,302
+23bd2b,127.0.0.1,GET,http://127.0.0.1:8000/login,1651659831,,200
+acf25c,127.0.0.1,POST,http://127.0.0.1:8000/login,1651659833,,302
+c66835,127.0.0.1,GET,http://127.0.0.1:8000/login,1651659834,,200
+4e222d,127.0.0.1,POST,http://127.0.0.1:8000/login,1651659837,,302
+904f19,127.0.0.1,GET,http://127.0.0.1:8000/login,1651659838,,200
