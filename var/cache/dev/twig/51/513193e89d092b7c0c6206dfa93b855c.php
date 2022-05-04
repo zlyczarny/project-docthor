@@ -45,33 +45,34 @@ class __TwigTemplate_76d58a503b56655155a8a20448cc8982 extends Template
 <a href=\"";
         // line 6
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 6, $this->source); })()), "formattedValue", [], "any", false, false, false, 6), "html", null, true);
-        echo "\"><i class=\"fa fa-download\" aria-hidden=\"true\"></i>
+        echo "\" download>
+<i class=\"fa fa-download\" aria-hidden=\"true\"></i>
 Pobierz</a><br>
 
 
 ";
-        // line 11
+        // line 12
         echo "
     ";
-        // line 12
-        $context["html_id"] = ("ea-text-editor-" . twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 12, $this->source); })()), "uniqueId", [], "any", false, false, false, 12));
         // line 13
+        $context["html_id"] = ("ea-text-editor-" . twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 13, $this->source); })()), "uniqueId", [], "any", false, false, false, 13));
+        // line 14
         echo "    <a href=\"#\" data-bs-toggle=\"modal\" data-bs-target=\"#";
-        echo twig_escape_filter($this->env, (isset($context["html_id"]) || array_key_exists("html_id", $context) ? $context["html_id"] : (function () { throw new RuntimeError('Variable "html_id" does not exist.', 13, $this->source); })()), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["html_id"]) || array_key_exists("html_id", $context) ? $context["html_id"] : (function () { throw new RuntimeError('Variable "html_id" does not exist.', 14, $this->source); })()), "html", null, true);
         echo "\">
         <i class=\"far fa-file-alt\"></i> Podgląd  </a>
 
     <div class=\"modal fade\" id=\"";
-        // line 16
-        echo twig_escape_filter($this->env, (isset($context["html_id"]) || array_key_exists("html_id", $context) ? $context["html_id"] : (function () { throw new RuntimeError('Variable "html_id" does not exist.', 16, $this->source); })()), "html", null, true);
+        // line 17
+        echo twig_escape_filter($this->env, (isset($context["html_id"]) || array_key_exists("html_id", $context) ? $context["html_id"] : (function () { throw new RuntimeError('Variable "html_id" does not exist.', 17, $this->source); })()), "html", null, true);
         echo "\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
         <div class=\"modal-dialog modal-lg\" role=\"document\">
             <div class=\"modal-content\">
 
                 <div class=\"modal-body\">
                     <embed src=\"";
-        // line 21
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 21, $this->source); })()), "formattedValue", [], "any", false, false, false, 21), "html", null, true);
+        // line 22
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 22, $this->source); })()), "formattedValue", [], "any", false, false, false, 22), "html", null, true);
         echo "\" width=\"100%\" height=\"600\" >
                 </div>
             </div>
@@ -98,7 +99,7 @@ Pobierz</a><br>
 
     public function getDebugInfo()
     {
-        return array (  74 => 21,  66 => 16,  59 => 13,  57 => 12,  54 => 11,  47 => 6,  43 => 4,);
+        return array (  75 => 22,  67 => 17,  60 => 14,  58 => 13,  55 => 12,  47 => 6,  43 => 4,);
     }
 
     public function getSourceContext()
@@ -108,7 +109,8 @@ Pobierz</a><br>
 #}
 
 
-<a href=\"{{ field.formattedValue }}\"><i class=\"fa fa-download\" aria-hidden=\"true\"></i>
+<a href=\"{{ field.formattedValue }}\" download>
+<i class=\"fa fa-download\" aria-hidden=\"true\"></i>
 Pobierz</a><br>
 
 

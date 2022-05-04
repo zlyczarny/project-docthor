@@ -5,7 +5,7 @@
 {% block body_class 'page-content' %}
 
 {% block page_title %}
-DocThor - dashboard {% deprecated 'The "page_title" block is deprecated, use "content_title" instead.' %}
+DocThor - Pulpit {% deprecated 'The "page_title" block is deprecated, use "content_title" instead.' %}
 {% endblock %}
 
 {% block content_title %}{{ block('page_title') }}{% endblock %}
@@ -19,7 +19,14 @@ Wybierz interesujacą cie kategorie z menu po lewej stronie. Jeżeli nie masz do
 <br>
 <br><i class="fa fa-info" aria-hidden="true"></i>
 Projekt powstał w ramach realizacji projektu zaliczeniowego w studiach podyplomowych WSB. Projekt zrealizowany przez Katarzyna Drzewiecka oraz Bartosz Tomaszewski.  
-  
+<br><br>
+Użyto:<br>
+https://github.com/symfony/symfony<br>
+https://github.com/EasyCorp/EasyAdminBundle<br>
+https://github.com/dustin10/VichUploaderBundle<br>
+
+
+
     {% deprecated 'The "page_content" block is deprecated, use "main" instead.' %}
 {% endblock %}
 

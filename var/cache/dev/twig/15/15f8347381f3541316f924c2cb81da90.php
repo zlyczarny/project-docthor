@@ -49,7 +49,7 @@ class __TwigTemplate_aa54bda8c707411fb9b21cf47f98a76f extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@EasyAdmin/page/content.html.twig"));
 
         // line 3
-        $context["__internal_7d5e05480802cd4f4a4aae3a3fe58cab677fb1bd65faf0d93ea286aa10caafb0"] = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 3, $this->source); })()), "i18n", [], "any", false, false, false, 3), "translationDomain", [], "any", false, false, false, 3);
+        $context["__internal_49ad50a6f7d2b2358516b8a5f764f4890affc19a3b7674d74cbd6dc3bb2662fb"] = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 3, $this->source); })()), "i18n", [], "any", false, false, false, 3), "translationDomain", [], "any", false, false, false, 3);
         // line 2
         $this->getParent($context)->display($context, array_merge($this->blocks, $blocks));
         
@@ -90,7 +90,7 @@ class __TwigTemplate_aa54bda8c707411fb9b21cf47f98a76f extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
         // line 8
-        echo "DocThor - dashboard ";
+        echo "DocThor - Pulpit ";
         @trigger_error("The \"page_title\" block is deprecated, use \"content_title\" instead."." (\"@EasyAdmin/page/content.html.twig\" at line 8).", E_USER_DEPRECATED);
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -138,10 +138,17 @@ Wybierz interesujacą cie kategorie z menu po lewej stronie. Jeżeli nie masz do
 <br>
 <br><i class=\"fa fa-info\" aria-hidden=\"true\"></i>
 Projekt powstał w ramach realizacji projektu zaliczeniowego w studiach podyplomowych WSB. Projekt zrealizowany przez Katarzyna Drzewiecka oraz Bartosz Tomaszewski.  
-  
+<br><br>
+Użyto:<br>
+https://github.com/symfony/symfony<br>
+https://github.com/EasyCorp/EasyAdminBundle<br>
+https://github.com/dustin10/VichUploaderBundle<br>
+
+
+
     ";
-        // line 23
-        @trigger_error("The \"page_content\" block is deprecated, use \"main\" instead."." (\"@EasyAdmin/page/content.html.twig\" at line 23).", E_USER_DEPRECATED);
+        // line 30
+        @trigger_error("The \"page_content\" block is deprecated, use \"main\" instead."." (\"@EasyAdmin/page/content.html.twig\" at line 30).", E_USER_DEPRECATED);
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -150,7 +157,7 @@ Projekt powstał w ramach realizacji projektu zaliczeniowego w studiach podyplom
 
     }
 
-    // line 26
+    // line 33
     public function block_main($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -181,7 +188,7 @@ Projekt powstał w ramach realizacji projektu zaliczeniowego w studiach podyplom
 
     public function getDebugInfo()
     {
-        return array (  154 => 26,  144 => 23,  123 => 13,  104 => 11,  93 => 8,  83 => 7,  64 => 5,  54 => 2,  52 => 3,  39 => 2,);
+        return array (  161 => 33,  151 => 30,  123 => 13,  104 => 11,  93 => 8,  83 => 7,  64 => 5,  54 => 2,  52 => 3,  39 => 2,);
     }
 
     public function getSourceContext()
@@ -193,7 +200,7 @@ Projekt powstał w ramach realizacji projektu zaliczeniowego w studiach podyplom
 {% block body_class 'page-content' %}
 
 {% block page_title %}
-DocThor - dashboard {% deprecated 'The \"page_title\" block is deprecated, use \"content_title\" instead.' %}
+DocThor - Pulpit {% deprecated 'The \"page_title\" block is deprecated, use \"content_title\" instead.' %}
 {% endblock %}
 
 {% block content_title %}{{ block('page_title') }}{% endblock %}
@@ -207,11 +214,18 @@ Wybierz interesujacą cie kategorie z menu po lewej stronie. Jeżeli nie masz do
 <br>
 <br><i class=\"fa fa-info\" aria-hidden=\"true\"></i>
 Projekt powstał w ramach realizacji projektu zaliczeniowego w studiach podyplomowych WSB. Projekt zrealizowany przez Katarzyna Drzewiecka oraz Bartosz Tomaszewski.  
-  
+<br><br>
+Użyto:<br>
+https://github.com/symfony/symfony<br>
+https://github.com/EasyCorp/EasyAdminBundle<br>
+https://github.com/dustin10/VichUploaderBundle<br>
+
+
+
     {% deprecated 'The \"page_content\" block is deprecated, use \"main\" instead.' %}
 {% endblock %}
 
 {% block main %}{{ block('page_content') }}{% endblock %}
-", "@EasyAdmin/page/content.html.twig", "D:\\Pobrane\\project-docthor2\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\page\\content.html.twig");
+", "@EasyAdmin/page/content.html.twig", "C:\\xampp\\htdocs\\docthor\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\page\\content.html.twig");
     }
 }

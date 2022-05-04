@@ -9,6 +9,7 @@ https://github.com/rollerworks/PasswordStrengthValidator
 3. Jako Dyrektor Działu po otrzymaniu danych dostępowych do systemu, chcę mieć możliwość zmiany hasła, abym jako jedyna osoba znała dane dostępowe do mojego konta w systemie.
 i 
 Jako  Pracownik Działu po otrzymaniu danych dostępowych do systemu, chcę mieć możliwość zmiany hasła, abym jako jedyna osoba znała dane dostępowe do mojego konta w systemie.
+https://github.com/SymfonyCasts/reset-password-bundle
 
 4. Jako Dyrektor Działu, chcę widzieć wszystkich pracowników z działu z dostępem do repozytorium, abym mógł reagować w przypadku dostępu do systemu pracowników nieuprawnionych, np. stażystów, praktykantów.  
 
@@ -22,3 +23,6 @@ Do poprawy:
 # zrobione - 5. Dodanie textu na start - dashboard
 # zrobione - 6. Route prowadzący do /admin
 # zrobione - 7. Poprawdzi znacznik <div> w texteditorfield
+8. Slugi - skrócenie adresów
+9. DOT TODO 4 - zmiana hierarchi dostępowej do crud użytkownicy
+10. Uruchomić apke na hostingu

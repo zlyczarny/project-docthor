@@ -85,17 +85,17 @@ class __TwigTemplate_573f5a7ac99f7b0fa65bac2f9b88f0a8 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<form method=\"post\" id=\"login-form\">
+        echo "<form method=\"post\">
 
     <center>
     <h1><img src=\"thor.png\">DocThor</h1><br>
     <h3 class=\"h3 mb-3 font-weight-normal\">Zaloguj się do DocThor</h3>
     <table><tr><td>
-    <label for=\"inputUsername\">Nazwa użytkownika</label></td><td>
+    <label for=\"inputUsername\">Użytkownik</label></td><td>
     <input type=\"text\" value=\"";
         // line 13
         echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 13, $this->source); })()), "html", null, true);
-        echo "\" name=\"username\"  id=\"inputUsername\" class=\"form-control\" autocomplete=\"username\" required autofocus><br></td></tr><tr><td>
+        echo "\" name=\"username\" id=\"inputUsername\" class=\"form-control\" autocomplete=\"username\" required autofocus><br></td></tr><tr><td>
     <label for=\"inputPassword\">Hasło</label></td><td>
     <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" required></td></tr></table>
 
@@ -171,14 +171,14 @@ class __TwigTemplate_573f5a7ac99f7b0fa65bac2f9b88f0a8 extends Template
 {% block title %}DocThor - Zaloguj się!{% endblock %}
 
 {% block body %}
-<form method=\"post\" id=\"login-form\">
+<form method=\"post\">
 
     <center>
     <h1><img src=\"thor.png\">DocThor</h1><br>
     <h3 class=\"h3 mb-3 font-weight-normal\">Zaloguj się do DocThor</h3>
     <table><tr><td>
-    <label for=\"inputUsername\">Nazwa użytkownika</label></td><td>
-    <input type=\"text\" value=\"{{ last_username }}\" name=\"username\"  id=\"inputUsername\" class=\"form-control\" autocomplete=\"username\" required autofocus><br></td></tr><tr><td>
+    <label for=\"inputUsername\">Użytkownik</label></td><td>
+    <input type=\"text\" value=\"{{ last_username }}\" name=\"username\" id=\"inputUsername\" class=\"form-control\" autocomplete=\"username\" required autofocus><br></td></tr><tr><td>
     <label for=\"inputPassword\">Hasło</label></td><td>
     <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" required></td></tr></table>
 
