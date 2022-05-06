@@ -1,0 +1,35 @@
+1. W celu utworzenia dodatkowych kategorii dokumentów należy w lini komend utworzyć dodatkowe encje.
+Do tego wykorzystywana jest komenda
+
+bin/console make:entity nazwaKategorii
+
+2. Po wysłaniu tego zapytania, aplikacja zapyta nas o nazwy pól, typ oraz długość znaków. Domyślnie wszystkie kategorie dokumentów posiadają:
+
+nazwe - string - 255
+opis - longtext
+autor - string -255
+data - date
+aktualny - boolean
+wersja - int
+image_name -string - 255
+image_size - int
+
+3. Po zakończeniu dodawania pól, należy wykongac migracje do bazy danych, do tego należy wykorzystac komend:
+
+bin/console make:migration
+oraz
+bin/console doctrine:mirations:migrate
+
+4. Kategoria została utworzona, by zobaczyć ją w menu, trzeba ją dodać w pliku src/Controller/Admin/DashboardController.php dodając linijke z nazwą utworzonej kategori
+
+MenuItem::linkToCrud('Dokumentacja', 'fa fa-list-ol', nazwaKategori::class),
+
+5. W celu u ujednolicenia kategorii należy przekopiować poniższe funkcje z controllera innej kategori do nowo utworzonej:
+
+z src/Controller/Admin/InnKat1CrudController.php
+do src/Controller/Admin/nazwaKategoriiCrudController.php
+
+public function configureCrud(Crud $crud): Crud
+public function configureFilters(Filters $filters): Filters
+public function configureActions(Actions $actions): Actions
+public function configureFields(string $pageName): iterable

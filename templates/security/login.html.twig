@@ -1,18 +1,22 @@
 {% extends 'base.html.twig' %}
 
+
+{% block stylesheets %}
+     <link href="/bundles/easyadmin/app.css" rel="stylesheet" />
+{% endblock %}
+
 {% block title %}DocThor - Zaloguj się!{% endblock %}
 
 {% block body %}
 <form method="post">
 
     <center>
-    <h1><img src="thor.png">DocThor</h1><br>
+    <h1><img src="thor.png">DocThor</h1><br><br>
     <h3 class="h3 mb-3 font-weight-normal">Zaloguj się do DocThor</h3>
     <table><tr><td>
-    <label for="inputUsername">Użytkownik</label></td><td>
-    <input type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" autocomplete="username" required autofocus><br></td></tr><tr><td>
-    <label for="inputPassword">Hasło</label></td><td>
-    <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required></td></tr></table>
+    <input type="text" placeholder="Użytkownik" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" autocomplete="username" required autofocus></td></tr><tr>
+<td>
+    <input type="password" placeholder="Hasło" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required></td></tr></table>
 
     {% if error %}
         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
@@ -26,7 +30,7 @@
 
     <input type="hidden" name="_csrf_token"
            value="{{ csrf_token('authenticate') }}">
-    <a href="{{ path('app_forgot_password_request') }}">Zapomniałem hasła</a><br>
+    <a href="{{ path('app_forgot_password_request') }}" class="-- link-color">Zapomniałem hasła</a><br>
 
     {#
         Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
@@ -39,7 +43,7 @@
         </div>
     #}
 <br>
-    <button class="btn btn-lg btn-primary" type="submit">
+    <button class="btn btn-primary" type="submit">
         Zaloguj
     </button>
 </form>
