@@ -14,12 +14,16 @@ class ResetPasswordRequestFormType extends AbstractType
     {
         $builder
             ->add('email', EmailType::class, [
-                'attr' => ['autocomplete' => 'email'],
+                'label' => ' ',
+                
+                #https://stackoverflow.com/questions/51708088/how-can-i-add-a-style-to-a-form-element-in-symfony-4
                 'constraints' => [
                     new NotBlank([
-                        'message' => 'Wprowadź swój adres emails',
+                        'message' => 'Wprowadź swój adres email',
                     ]),
                 ],
+                'attr' => ['class' => 'form-control', 'placeholder'=> 'Adres email','autocomplete' => 'email'],
+
             ])
         ;
     }

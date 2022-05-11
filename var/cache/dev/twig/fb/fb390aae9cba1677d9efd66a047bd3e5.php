@@ -93,6 +93,6 @@ class __TwigTemplate_be4b2df0c0ea144d949bdc900bd7957b extends Template
         return new Source("
 {% extends '@EasyAdmin/page/content.html.twig' %}
 
-{% block content_title %}Pulpit{% endblock %}", "admin/index.html.twig", "C:\\xampp\\htdocs\\docthor — kopia (2)\\templates\\admin\\index.html.twig");
+{% block content_title %}Pulpit{% endblock %}", "admin/index.html.twig", "C:\\xampp\\htdocs\\docthor\\templates\\admin\\index.html.twig");
     }
 }

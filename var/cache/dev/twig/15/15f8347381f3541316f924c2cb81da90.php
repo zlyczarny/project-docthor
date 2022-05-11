@@ -49,7 +49,7 @@ class __TwigTemplate_aa54bda8c707411fb9b21cf47f98a76f extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@EasyAdmin/page/content.html.twig"));
 
         // line 3
-        $context["__internal_a989e8a6af289fcbb9f46ab9e28ef19b6421c4daeadcadbcf5a7cdacc6d44c4d"] = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 3, $this->source); })()), "i18n", [], "any", false, false, false, 3), "translationDomain", [], "any", false, false, false, 3);
+        $context["__internal_ad3e0da5ed63f67ebd8c514431924e303ae3dec8a390c541c3170ff6be5c21d0"] = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 3, $this->source); })()), "i18n", [], "any", false, false, false, 3), "translationDomain", [], "any", false, false, false, 3);
         // line 2
         $this->getParent($context)->display($context, array_merge($this->blocks, $blocks));
         
@@ -143,12 +143,14 @@ Użyto:<br>
 https://github.com/symfony/symfony<br>
 https://github.com/EasyCorp/EasyAdminBundle<br>
 https://github.com/dustin10/VichUploaderBundle<br>
+https://github.com/SymfonyCasts/reset-password-bundle<br>
+
 
 
 
     ";
-        // line 30
-        @trigger_error("The \"page_content\" block is deprecated, use \"main\" instead."." (\"@EasyAdmin/page/content.html.twig\" at line 30).", E_USER_DEPRECATED);
+        // line 32
+        @trigger_error("The \"page_content\" block is deprecated, use \"main\" instead."." (\"@EasyAdmin/page/content.html.twig\" at line 32).", E_USER_DEPRECATED);
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -157,7 +159,7 @@ https://github.com/dustin10/VichUploaderBundle<br>
 
     }
 
-    // line 33
+    // line 35
     public function block_main($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -188,7 +190,7 @@ https://github.com/dustin10/VichUploaderBundle<br>
 
     public function getDebugInfo()
     {
-        return array (  161 => 33,  151 => 30,  123 => 13,  104 => 11,  93 => 8,  83 => 7,  64 => 5,  54 => 2,  52 => 3,  39 => 2,);
+        return array (  163 => 35,  153 => 32,  123 => 13,  104 => 11,  93 => 8,  83 => 7,  64 => 5,  54 => 2,  52 => 3,  39 => 2,);
     }
 
     public function getSourceContext()
@@ -219,6 +221,8 @@ Użyto:<br>
 https://github.com/symfony/symfony<br>
 https://github.com/EasyCorp/EasyAdminBundle<br>
 https://github.com/dustin10/VichUploaderBundle<br>
+https://github.com/SymfonyCasts/reset-password-bundle<br>
+
 
 
 
@@ -226,6 +230,6 @@ https://github.com/dustin10/VichUploaderBundle<br>
 {% endblock %}
 
 {% block main %}{{ block('page_content') }}{% endblock %}
-", "@EasyAdmin/page/content.html.twig", "C:\\xampp\\htdocs\\docthor — kopia (2)\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\page\\content.html.twig");
+", "@EasyAdmin/page/content.html.twig", "C:\\xampp\\htdocs\\docthor\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\page\\content.html.twig");
     }
 }

@@ -1,24 +1,25 @@
 {% extends 'base.html.twig' %}
 {% block stylesheets %}
-     <link href="/bundles/easyadmin/app.css" rel="stylesheet" />
+    <link href="/bundles/easyadmin/app.css" rel="stylesheet" />
+    <link href="favicon-32x32.png" rel="icon" />
 {% endblock %}
-{% block title %}DocThor - resetuj hasło{% endblock %}
+{% block title %}DocThor - zresetuj hasło{% endblock %}
 
 {% block body %}
     {% for flash_error in app.flashes('reset_password_error') %}
         <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
     {% endfor %}
     <center>
-    <h1><img src="../thor.png">DocThor</h1><br><br>
-   <h3 class="h3 mb-3 font-weight-normal">Zresetuj hasło</h3>
-    
-    Wprowadź adres email połączony z twoim kontem w celu otrzymania wiadomości resetujacej hasło.<br>
-
-<table size="20%"><td><tr>
-    {{ form_start(requestForm) }} <br>
+    <a href="/admin"><h1><img src="../thor.png">DocThor</h1></a><br><br>
+    <h3 class="h3 mb-3 font-weight-normal">Zresetuj hasło</h3>
+    Wprowadź adres email połączony z twoim kontem w celu otrzymania wiadomości z linkiem resetujacym hasło.
+    <table><tr><td>
+    {{ form_start(requestForm) }} 
         {{ form_row(requestForm.email) }}
-        </td></tr></table>
-<br>
-        <button class="btn btn-primary">Wyślij link</button>
+    </tr></td></table>
+
+    <br> <button class="btn btn-primary">Wyślij link</button>
     {{ form_end(requestForm) }} </center>
+
+    
 {% endblock %}

@@ -2,31 +2,33 @@
 
 
 {% block stylesheets %}
-     <link href="/bundles/easyadmin/app.css" rel="stylesheet" />
+    <link href="/bundles/easyadmin/app.css" rel="stylesheet" />
+    <link href="favicon-32x32.png" rel="icon" />
 {% endblock %}
 
 {% block title %}DocThor - Zaloguj się!{% endblock %}
 
 {% block body %}
-<form method="post">
+{% if error %}
+        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}
+
+{% if app.user %}
+        <div class="alert alert-danger">
+            Jesteś już zalogowany jako użytkownik {{ app.user.username }}, <a href="{{ path('app_logout') }}">Wyloguj</a>
+        </div>
+{% endif %}
+
+
 
     <center>
-    <h1><img src="thor.png">DocThor</h1><br><br>
-    <h3 class="h3 mb-3 font-weight-normal">Zaloguj się do DocThor</h3>
-    <table><tr><td>
+    <a href="/admin"><h1><img src="thor.png">DocThor</h1></a><br><br>
+    <h3 class="h3 mb-3 font-weight-normal">Zaloguj się</h3>
+    Wprowadź swoją nazwe użytkownika oraz hasło w celu zalogowania się.
+    <form method="post"> <table><tr><td><br>
     <input type="text" placeholder="Użytkownik" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" autocomplete="username" required autofocus></td></tr><tr>
-<td>
+    <td>
     <input type="password" placeholder="Hasło" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required></td></tr></table>
-
-    {% if error %}
-        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-    {% endif %}
-
-    {% if app.user %}
-        <div class="mb-3">
-            Jesteś zalogowany jako {{ app.user.username }}, <a href="{{ path('app_logout') }}">Wyloguj</a>
-        </div>
-    {% endif %}
 
     <input type="hidden" name="_csrf_token"
            value="{{ csrf_token('authenticate') }}">
@@ -42,10 +44,6 @@
             </label>
         </div>
     #}
-<br>
-    <button class="btn btn-primary" type="submit">
-        Zaloguj
-    </button>
-</form>
-</center>
+    <br><button class="btn btn-primary" type="submit">Zaloguj</button></form>
+    </center>
 {% endblock %}

@@ -15,26 +15,26 @@ class ChangePasswordFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('plainPassword', RepeatedType::class, [
+            ->add('plainPassword', RepeatedType::class,  [
                 'type' => PasswordType::class,
                 'first_options' => [
-                    'attr' => ['autocomplete' => 'new-password'],
                     'constraints' => [
                         new NotBlank([
                             'message' => 'Wprowadź hasło',
                         ]),
                         new Length([
                             'min' => 6,
-                            'minMessage' => 'Twoje hasło powinno składać się z minimum {{ limit }} znaków',
+                            'minMessage' => 'Hasło powinno składać się z min. {{ limit }} znaków',
                             // max length allowed by Symfony for security reasons
                             'max' => 4096,
                         ]),
                     ],
-                    'label' => 'Nowe Hasło',
+                    'attr' => ['placeholder'=> 'Nowe hasło', 'class' => 'form-control', 'autocomplete' => 'new-password'],
+                    'label' => ' ',
                 ],
                 'second_options' => [
-                    'attr' => ['autocomplete' => 'new-password'],
-                    'label' => 'Powtórz Hasło',
+                    'attr' => ['class' => 'form-control', 'autocomplete' => 'new-password','placeholder'=> 'Powtórz hasło', 'class' => 'form-control'  ],
+                    'label' => ' ',
                 ],
                 'invalid_message' => 'Hasła muszą się zgadzać.',
                 // Instead of being set onto the object directly,

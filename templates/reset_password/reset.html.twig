@@ -1,17 +1,28 @@
 {% extends 'base.html.twig' %}
 {% block stylesheets %}
-     <link href="/bundles/easyadmin/app.css" rel="stylesheet" />
+    <link href="/bundles/easyadmin/app.css" rel="stylesheet" />
+    <link href="favicon-32x32.png" rel="icon" />
 {% endblock %}
 {% block title %}DocThor - zresetuj hasło{% endblock %}
 
 {% block body %}
-   <center>
-    <h1><img src="../thor.png">DocThor</h1><br><br>
+    <center>
+    <a href="/admin"><h1><img src="../thor.png">DocThor</h1></a>
+    <br><br>
     <h3 class="h3 mb-3 font-weight-normal">Zresetuj hasło</h3>
+    Wprowadź dwukrotnie nowe hasło.
 
-
-    {{ form_start(resetForm) }} 
-        {{ form_row(resetForm.plainPassword, {'class': 'form-control'}) }}
-        <br><button class="btn btn-primary">Resetuj</button>
+    <table><td>
+    {{ form_start(resetForm) }}   
+       {{ form_row(resetForm.plainPassword) }}</td></table>
+        <br><button class="btn btn-primary">Zmień hasło</button>
     {{ form_end(resetForm) }}
+
+
+    </center>
+    {# rozpisanie formularzy osobno
+    {{ form_row(resetForm.plainPassword.first) }}
+    {{ form_row(resetForm.plainPassword.second) }}
+    #}
+
 {% endblock %}

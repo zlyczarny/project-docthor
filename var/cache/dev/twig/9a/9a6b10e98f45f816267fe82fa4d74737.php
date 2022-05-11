@@ -201,6 +201,6 @@ class __TwigTemplate_66b1479f4e2cb8dac86a9e2f00fe43b0 extends Template
         {% endblock %}
     </body>
 </html>
-", "base.html.twig", "C:\\xampp\\htdocs\\docthor — kopia (2)\\templates\\base.html.twig");
+", "base.html.twig", "C:\\xampp\\htdocs\\docthor\\templates\\base.html.twig");
     }
 }
