@@ -25,6 +25,7 @@ class __TwigTemplate_c1b6d150e95fd0eee09d161de8b683aa extends Template
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
+            'stylesheets' => [$this, 'block_stylesheets'],
             'title' => [$this, 'block_title'],
             'body' => [$this, 'block_body'],
         ];
@@ -55,7 +56,29 @@ class __TwigTemplate_c1b6d150e95fd0eee09d161de8b683aa extends Template
 
     }
 
-    // line 3
+    // line 2
+    public function block_stylesheets($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        // line 3
+        echo "    <link href=\"/bundles/easyadmin/app.css\" rel=\"stylesheet\" />
+    <link href=\"favicon-32x32.png\" rel=\"icon\" />
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 6
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -65,7 +88,7 @@ class __TwigTemplate_c1b6d150e95fd0eee09d161de8b683aa extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Docthor - zresetuj hasło";
+        echo "DocThor - zresetuj hasło";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -74,7 +97,7 @@ class __TwigTemplate_c1b6d150e95fd0eee09d161de8b683aa extends Template
 
     }
 
-    // line 5
+    // line 8
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -84,24 +107,36 @@ class __TwigTemplate_c1b6d150e95fd0eee09d161de8b683aa extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
-        echo "   <center>
-    <h1><img src=\"../thor.png\">DocThor</h1>
+        // line 9
+        echo "   <section class=\"vh-100\" style=\"background-color: #508bfc;\">
+  <div class=\"container py-5 h-100\">
+   <center><a href=\"/admin\"><h1><img src=\"..\\thor.png\">DocThor</h1></a></center>
+    <div class=\"row d-flex justify-content-center align-items-center \">
+      <div class=\"col-12 col-md-8 col-lg-2 col-xl-4\">
+        <div class=\"card shadow-2-strong\" style=\"border-radius: 1rem;\">
+          <div class=\"card-body p-5 text-center\">
     <h3 class=\"h3 mb-3 font-weight-normal\">Zresetuj hasło</h3>
+    Wprowadź dwukrotnie nowe hasło.
 
 
     ";
-        // line 11
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["resetForm"]) || array_key_exists("resetForm", $context) ? $context["resetForm"] : (function () { throw new RuntimeError('Variable "resetForm" does not exist.', 11, $this->source); })()), 'form_start');
-        echo " 
-        ";
-        // line 12
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["resetForm"]) || array_key_exists("resetForm", $context) ? $context["resetForm"] : (function () { throw new RuntimeError('Variable "resetForm" does not exist.', 12, $this->source); })()), "plainPassword", [], "any", false, false, false, 12), 'row');
+        // line 20
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["resetForm"]) || array_key_exists("resetForm", $context) ? $context["resetForm"] : (function () { throw new RuntimeError('Variable "resetForm" does not exist.', 20, $this->source); })()), 'form_start');
+        echo "   
+       ";
+        // line 21
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["resetForm"]) || array_key_exists("resetForm", $context) ? $context["resetForm"] : (function () { throw new RuntimeError('Variable "resetForm" does not exist.', 21, $this->source); })()), "plainPassword", [], "any", false, false, false, 21), 'row');
         echo "
-        <button class=\"btn btn-primary\">Resetuj</button>
+        <br><button class=\"btn btn-primary\">Zmień hasło</button>
     ";
-        // line 14
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["resetForm"]) || array_key_exists("resetForm", $context) ? $context["resetForm"] : (function () { throw new RuntimeError('Variable "resetForm" does not exist.', 14, $this->source); })()), 'form_end');
+        // line 23
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["resetForm"]) || array_key_exists("resetForm", $context) ? $context["resetForm"] : (function () { throw new RuntimeError('Variable "resetForm" does not exist.', 23, $this->source); })()), 'form_end');
+        echo "
+
+
+    </center>
+    ";
+        // line 31
         echo "
 ";
         
@@ -124,26 +159,43 @@ class __TwigTemplate_c1b6d150e95fd0eee09d161de8b683aa extends Template
 
     public function getDebugInfo()
     {
-        return array (  104 => 14,  99 => 12,  95 => 11,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  140 => 31,  133 => 23,  128 => 21,  124 => 20,  111 => 9,  101 => 8,  82 => 6,  70 => 3,  60 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
-
-{% block title %}Docthor - zresetuj hasło{% endblock %}
+{% block stylesheets %}
+    <link href=\"/bundles/easyadmin/app.css\" rel=\"stylesheet\" />
+    <link href=\"favicon-32x32.png\" rel=\"icon\" />
+{% endblock %}
+{% block title %}DocThor - zresetuj hasło{% endblock %}
 
 {% block body %}
-   <center>
-    <h1><img src=\"../thor.png\">DocThor</h1>
+   <section class=\"vh-100\" style=\"background-color: #508bfc;\">
+  <div class=\"container py-5 h-100\">
+   <center><a href=\"/admin\"><h1><img src=\"..\\thor.png\">DocThor</h1></a></center>
+    <div class=\"row d-flex justify-content-center align-items-center \">
+      <div class=\"col-12 col-md-8 col-lg-2 col-xl-4\">
+        <div class=\"card shadow-2-strong\" style=\"border-radius: 1rem;\">
+          <div class=\"card-body p-5 text-center\">
     <h3 class=\"h3 mb-3 font-weight-normal\">Zresetuj hasło</h3>
+    Wprowadź dwukrotnie nowe hasło.
 
 
-    {{ form_start(resetForm) }} 
-        {{ form_row(resetForm.plainPassword) }}
-        <button class=\"btn btn-primary\">Resetuj</button>
+    {{ form_start(resetForm) }}   
+       {{ form_row(resetForm.plainPassword) }}
+        <br><button class=\"btn btn-primary\">Zmień hasło</button>
     {{ form_end(resetForm) }}
+
+
+    </center>
+    {# rozpisanie formularzy osobno
+    {{ form_row(resetForm.plainPassword.first) }}
+    {{ form_row(resetForm.plainPassword.second) }}
+    #}
+
 {% endblock %}
-", "reset_password/reset.html.twig", "C:\\xampp\\htdocs\\docthor — kopia (2)\\templates\\reset_password\\reset.html.twig");
+", "reset_password/reset.html.twig", "C:\\xampp\\htdocs\\docthor\\templates\\reset_password\\reset.html.twig");
     }
 }

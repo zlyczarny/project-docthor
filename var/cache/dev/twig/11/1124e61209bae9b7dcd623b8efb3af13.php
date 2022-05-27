@@ -94,6 +94,6 @@ class __TwigTemplate_41eeaff199aa314706a409a6571a29e0 extends Template
 
 <p>Pozdrawia</p>
 <p>Zespół Docthor</p>
-", "reset_password/email.html.twig", "C:\\xampp\\htdocs\\docthor — kopia (2)\\templates\\reset_password\\email.html.twig");
+", "reset_password/email.html.twig", "C:\\xampp\\htdocs\\docthor\\templates\\reset_password\\email.html.twig");
     }
 }

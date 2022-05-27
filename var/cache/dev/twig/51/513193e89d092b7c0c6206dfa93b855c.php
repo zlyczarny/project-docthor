@@ -68,14 +68,21 @@ Pobierz</a><br>
         echo "\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
         <div class=\"modal-dialog modal-lg\" role=\"document\">
             <div class=\"modal-content\">
-
-                <div class=\"modal-body\">
-                    <embed src=\"";
+                <div class=\"modal-header\">
+                <h5 class=\"modal-title\">Podgląd dokumentu</h5>
+                <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"";
         // line 22
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 22, $this->source); })()), "formattedValue", [], "any", false, false, false, 22), "html", null, true);
-        echo "\" width=\"100%\" height=\"600\" >
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("action.close", [], "EasyAdminBundle"), "html", null, true);
+        echo "\">
+                </button>
                 </div>
+            <div class=\"modal-body\">
+                <embed src=\"";
+        // line 26
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 26, $this->source); })()), "formattedValue", [], "any", false, false, false, 26), "html", null, true);
+        echo "\" width=\"100%\" height=\"600\" >
             </div>
+        </div>
         </div>
     </div>
 ";
@@ -99,7 +106,7 @@ Pobierz</a><br>
 
     public function getDebugInfo()
     {
-        return array (  75 => 22,  67 => 17,  60 => 14,  58 => 13,  55 => 12,  47 => 6,  43 => 4,);
+        return array (  82 => 26,  75 => 22,  67 => 17,  60 => 14,  58 => 13,  55 => 12,  47 => 6,  43 => 4,);
     }
 
     public function getSourceContext()
@@ -123,11 +130,15 @@ Pobierz</a><br>
     <div class=\"modal fade\" id=\"{{ html_id }}\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
         <div class=\"modal-dialog modal-lg\" role=\"document\">
             <div class=\"modal-content\">
-
-                <div class=\"modal-body\">
-                    <embed src=\"{{ field.formattedValue }}\" width=\"100%\" height=\"600\" >
+                <div class=\"modal-header\">
+                <h5 class=\"modal-title\">Podgląd dokumentu</h5>
+                <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"{{ 'action.close'|trans([], domain = 'EasyAdminBundle') }}\">
+                </button>
                 </div>
+            <div class=\"modal-body\">
+                <embed src=\"{{ field.formattedValue }}\" width=\"100%\" height=\"600\" >
             </div>
+        </div>
         </div>
     </div>
 ", "podglad.html.twig", "C:\\xampp\\htdocs\\docthor\\templates\\podglad.html.twig");

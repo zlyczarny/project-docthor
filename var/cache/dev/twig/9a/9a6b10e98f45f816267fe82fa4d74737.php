@@ -157,7 +157,7 @@ class __TwigTemplate_66b1479f4e2cb8dac86a9e2f00fe43b0 extends Template
 
         // line 18
         echo "    
-    <h1><img src=\"thor.png\">DocThor</h1><br>
+     <a href=\"/admin\"><h1><img src=\"thor.png\">DocThor</h1></a><br>
         ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -197,7 +197,7 @@ class __TwigTemplate_66b1479f4e2cb8dac86a9e2f00fe43b0 extends Template
     <body>
         {% block body %}
     
-    <h1><img src=\"thor.png\">DocThor</h1><br>
+     <a href=\"/admin\"><h1><img src=\"thor.png\">DocThor</h1></a><br>
         {% endblock %}
     </body>
 </html>
