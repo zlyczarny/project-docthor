@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Czas generowania: 05 Maj 2022, 16:25
--- Wersja serwera: 10.4.21-MariaDB
--- Wersja PHP: 8.1.2
+-- Host: localhost
+-- Czas generowania: 27 Maj 2022, 12:54
+-- Wersja serwera: 10.4.24-MariaDB-cll-lve
+-- Wersja PHP: 7.4.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Baza danych: `docthor`
+-- Baza danych: `cskekrnyhv_docthor`
 --
 
 -- --------------------------------------------------------
@@ -61,7 +61,7 @@ CREATE TABLE `inn_kat1` (
   `aktualny` tinyint(1) NOT NULL,
   `werja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -89,7 +89,7 @@ CREATE TABLE `inn_kat2` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -115,7 +115,7 @@ CREATE TABLE `inn_kat3` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -133,7 +133,7 @@ CREATE TABLE `inn_kat4` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -151,7 +151,7 @@ CREATE TABLE `kadr_kat1` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -187,7 +187,7 @@ CREATE TABLE `kadr_kat3` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -205,7 +205,7 @@ CREATE TABLE `kadr_kat4` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -223,8 +223,8 @@ CREATE TABLE `ksie_kat1` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL,
-  `updated_at` datetime NOT NULL
+  `image_size` int(11) DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -249,7 +249,7 @@ CREATE TABLE `ksie_kat2` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -267,7 +267,7 @@ CREATE TABLE `ksie_kat3` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -285,7 +285,7 @@ CREATE TABLE `mar_kat1` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -312,7 +312,7 @@ CREATE TABLE `mar_kat2` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -330,7 +330,7 @@ CREATE TABLE `mar_kat3` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -353,8 +353,10 @@ CREATE TABLE `reset_password_request` (
 --
 
 INSERT INTO `reset_password_request` (`id`, `user_id`, `selector`, `hashed_token`, `requested_at`, `expires_at`) VALUES
-(3, 2, '7zFQw5JfdQL3byJRrCSA', 'R8yfEfk722YTpO3bNLvDAlSV6rH0FE2SkKWLd2bWQNU=', '2022-05-04 15:05:34', '2022-05-04 16:05:34'),
-(4, 2, '39VuhEwNNTKKhbhdBqLU', 'T1sDomUL/0QI35y6liuCjLLJkRMvCIEl8oMHAmdRhLM=', '2022-05-04 17:33:27', '2022-05-04 18:33:27');
+(5, 2, 'J6fXCoykIfPOe9zF2PTo', 'TNY0a4HLIklDblhsIlf6LBQvK3FSrN8WPjj5JIKJHxI=', '2022-05-25 21:45:49', '2022-05-25 22:45:49'),
+(6, 2, 'Q2x4DSDnhNMtgcOEeSox', '+tyZDFzJAMEBWReRdNcXhXR4VSesNxWQ+jFX+8gvYKY=', '2022-05-26 11:19:40', '2022-05-26 12:19:40'),
+(7, 2, 'boKtjKmo9ixQ0Knaxhp7', 'lEGgxvYLgdFVpiBbSTnidgk00rQ5Gkfll+Zx0UBFaPg=', '2022-05-26 12:23:08', '2022-05-26 13:23:08'),
+(8, 1, 'BvrO9aF0PdTk5HZ4wJsX', 'CsqHa4kJfLB2SMhnsF778he34JOt6rm4rUwa65MrxBo=', '2022-05-26 13:54:41', '2022-05-26 14:54:41');
 
 -- --------------------------------------------------------
 
@@ -371,7 +373,7 @@ CREATE TABLE `sprz_kat1` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -389,7 +391,7 @@ CREATE TABLE `sprz_kat2` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -407,7 +409,7 @@ CREATE TABLE `sprz_kat3` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -425,7 +427,7 @@ CREATE TABLE `sprz_kat4` (
   `aktualny` tinyint(1) NOT NULL,
   `wersja` int(11) NOT NULL,
   `image_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image_size` int(11) NOT NULL
+  `image_size` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -453,10 +455,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `roles`, `password`, `email`, `aktywny`, `rejestracja`, `imie`, `nazwisko`, `stanowisko`, `dzial`) VALUES
-(1, 'admin', '[\"ROLE_ADMIN\"]', '$2y$13$LSY0D4/aw0Fl23MS/lJ3HO67Z4DDaHuzZnZ85/3GLgFgblN6mH/xm', 'b.tomasz@poczta.pl', 1, '2022-04-01', 'admin', 'admin', 'IT specialist', 'IT'),
+(1, 'admin', '[\"ROLE_ADMIN\"]', '$2y$13$LSY0D4/aw0Fl23MS/lJ3HO67Z4DDaHuzZnZ85/3GLgFgblN6mH/xm', 'zlyczarus@int.pl', 1, '2022-04-01', 'admin', 'admin', 'IT specialist', 'IT'),
 (2, 'tbartoszewski', '[\"ROLE_MARKEDIT\"]', '$2y$13$AKsrXOLOIvlexEAxJB.7ju/hCRgovf2B3BBqVN4W1WdDk1ldvAYjK', 'czarny-nt@o2.pl', 1, '2022-03-31', 'Tomasz', 'Bartoszewski', 'Markom', 'Marketing'),
-(3, 'bmaciejewska', '[\"ROLE_BLOK\"]', '$2y$13$2.HDNEpGg7CZDaSPovMeGOX3H3PtCLIfWR1Bc1yQPP..oJVaNgS3C', 'b.maciejewska@poczta.pl', 0, '2022-02-02', 'bozena', 'Maciejewska', 'Dyrektor Kadr', 'Kadry'),
-(4, 'bmaciejewska2', '[\"ROLE_SPRZ\"]', '$2y$13$y/BJZNugTrS.qHnnV4E7oOTxcMFnCkQPhBckNsLlGY..kOn58Yw5W', 'bkowal@pocz.pl', 1, '2022-04-02', 'Bożena', 'Maciejewska', 'Sprzedawca', 'Sprzedaz'),
+(3, 'bmaciejewska', '[\"ROLE_ADMIN\"]', '$2y$13$DGJ74AG17TH5RLV4k5xZz.Mb7Z7P7cS69/QdrkFfX6YIC27EU60qu', 'zlyczarny@gmail.cpm', 1, '2022-02-02', 'bozena', 'Maciejewska', 'Dyrektor Kadr', 'Kadry'),
+(4, 'bmaciejewska2', '[\"ROLE_SPRZ\"]', '$2y$13$ZDDOTov4lNHhtMsTc5xBheeYbsOypARE.wJDeaDZSbc55VGNLgM2G', 'bkowal@pocz.pl', 1, '2022-04-02', 'Bożena', 'Maciejewska', 'Sprzedawca', 'Sprzedaz'),
 (5, 'akrzyzanowski', '[\"ROLE_KSIE\"]', '$2y$13$W9XQtU0NQBN1sle30Xq9Ve33l93k.G1upjiuH/YZ/PWmZ2EkiLSse', 'akrzyzan@poczta.pl', 1, '2022-05-03', 'Adam', 'Krzyżanowski', 'Specjalista ds Księgowości', 'Ksiegowosc'),
 (7, 'mdudziak', '[\"ROLE_SPRZ\"]', '$2y$13$OOrhT1qV48TbKkViauyc7u86Hyj7m89jwsESti96WnohIspxWPEJe', 'mdudziak@poczta.pl', 1, '2022-05-03', 'Mikołaj', 'Dudziak', 'Sprzedawca', 'Sprzedaz');
 
@@ -684,7 +686,7 @@ ALTER TABLE `mar_kat3`
 -- AUTO_INCREMENT dla tabeli `reset_password_request`
 --
 ALTER TABLE `reset_password_request`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT dla tabeli `sprz_kat1`
