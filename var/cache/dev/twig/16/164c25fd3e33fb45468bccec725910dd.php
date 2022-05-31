@@ -138,6 +138,20 @@ class __TwigTemplate_c1b6d150e95fd0eee09d161de8b683aa extends Template
     ";
         // line 31
         echo "
+
+        </div>
+    </div>
+  </div>
+</section>
+<footer class=\"text-center text-white fixed-bottom\" style=\"background-color: #21081a;\">
+
+  <!-- Copyright -->
+  <div class=\"text-center p-3\" style=\"background-color: #60a5fa;\">
+    © 2022 Copyright:
+    <a class=\"text-white\" href=\"/admin\">docthor.pl</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -195,6 +209,20 @@ class __TwigTemplate_c1b6d150e95fd0eee09d161de8b683aa extends Template
     {{ form_row(resetForm.plainPassword.second) }}
     #}
 
+
+        </div>
+    </div>
+  </div>
+</section>
+<footer class=\"text-center text-white fixed-bottom\" style=\"background-color: #21081a;\">
+
+  <!-- Copyright -->
+  <div class=\"text-center p-3\" style=\"background-color: #60a5fa;\">
+    © 2022 Copyright:
+    <a class=\"text-white\" href=\"/admin\">docthor.pl</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 {% endblock %}
 ", "reset_password/reset.html.twig", "C:\\xampp\\htdocs\\docthor\\templates\\reset_password\\reset.html.twig");
     }

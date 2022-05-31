@@ -1,34 +1,14 @@
-#Historyjki
+Aplikacja jest dostępna online na pod adresem https://docthor.pl
 
-1. Jako Administrator, chcę mieć możliwość dodawania do struktury katalogów dostępnych dla wszystkich pracowników firmy, aby umieścić w nich ogólne wzory i szablony dokumentów. 
-- instrukcja tworzenia crudów i entity?
+W celu zalogowania się należy użyć poniższych danych logowania.
 
-2. Jako Administrator, chcę mieć możliwość parametryzacji  hasła dla użytkowników systemu, aby zniwelować ryzyko ataku hakerskiego na system.
-https://github.com/rollerworks/PasswordStrengthValidator
+admin:test1234 - administrator z wszystkimi uprawnieniami.
+bmaciejewska:bozenka - dostęp do podglądu i edycji zawartości działu HR, podglądu zawartości marketingu oraz podgląd użytkowników.
+akrzyzanowski:adam - dostęp do podglądu dokumentów w księgowości.
+mdudziak:mikipatyki - dostęp tylko do podglądu sprzedaży.
 
+Kod nie zawiera przykładowych pdfów.
 
+Konfiguracja połączenia z bazą w pliku .env.
 
-
-
-#TO DO:
-
-1. Dot. TODO2 - parametryzacja hasła
-3. Uruchomić apke na hostingu
-4. Problem z file_size can't be null przy dodawaniu pliku
-
-
-#Zrobione
-- DOT TODO 4 - zmiana hierarchi dostępowej do crud użytkownicy
-- 1. Zablokowanie widoczności kategori po wejściu w ukryty link
-- 3. Hierarcha roles - zmniejszenie ilosci uprawnień
-- 5. Dodanie textu na start - dashboard
-- 6. Route prowadzący do /admin
-- 7. Poprawdzi znacznik <div> w texteditorfield
-- Slugi/routing - skrócenie adresów - niemożliwe w easyadmin
-- 2. Dot. TODO 3 - formularz zmiany hasła?
-
-
-3. Jako Dyrektor Działu po otrzymaniu danych dostępowych do systemu, chcę mieć możliwość zmiany hasła, abym jako jedyna osoba znała dane dostępowe do mojego konta w systemie.
-i 
-Jako  Pracownik Działu po otrzymaniu danych dostępowych do systemu, chcę mieć możliwość zmiany hasła, abym jako jedyna osoba znała dane dostępowe do mojego konta w systemie.
-https://github.com/SymfonyCasts/reset-password-bundle
+https://github.com/zlyczarny/project-docthor

@@ -368,6 +368,38 @@ return [[
 '[C]App%5CController%5CAdmin%5CUsersCrudController%23configureActions' => 1,
 'App%5CController%5CAdmin%5CUsersCrudController%24passwordEncoder' => 0,
 '[C]App%5CController%5CAdmin%5CUsersCrudController%24passwordEncoder' => 1,
+'App%5CController%5CResetPasswordController' => 0,
+'[C]App%5CController%5CResetPasswordController' => 1,
+'App%5CController%5CResetPasswordController%23__construct' => 0,
+'[C]App%5CController%5CResetPasswordController%23__construct' => 1,
+'App%5CController%5CResetPasswordController%23request' => 0,
+'[C]App%5CController%5CResetPasswordController%23request' => 1,
+'App%5CController%5CResetPasswordController%23checkEmail' => 0,
+'[C]App%5CController%5CResetPasswordController%23checkEmail' => 1,
+'App%5CController%5CResetPasswordController%23reset' => 0,
+'[C]App%5CController%5CResetPasswordController%23reset' => 1,
+'App%5CController%5CResetPasswordController%23processSendingPasswordResetEmail' => 0,
+'[C]App%5CController%5CResetPasswordController%23processSendingPasswordResetEmail' => 1,
+'App%5CController%5CResetPasswordController%23setCanCheckEmailInSession' => 0,
+'[C]App%5CController%5CResetPasswordController%23setCanCheckEmailInSession' => 1,
+'App%5CController%5CResetPasswordController%23canCheckEmail' => 0,
+'[C]App%5CController%5CResetPasswordController%23canCheckEmail' => 1,
+'App%5CController%5CResetPasswordController%23storeTokenInSession' => 0,
+'[C]App%5CController%5CResetPasswordController%23storeTokenInSession' => 1,
+'App%5CController%5CResetPasswordController%23getTokenFromSession' => 0,
+'[C]App%5CController%5CResetPasswordController%23getTokenFromSession' => 1,
+'App%5CController%5CResetPasswordController%23setTokenObjectInSession' => 0,
+'[C]App%5CController%5CResetPasswordController%23setTokenObjectInSession' => 1,
+'App%5CController%5CResetPasswordController%23getTokenObjectFromSession' => 0,
+'[C]App%5CController%5CResetPasswordController%23getTokenObjectFromSession' => 1,
+'App%5CController%5CResetPasswordController%23cleanSessionAfterReset' => 0,
+'[C]App%5CController%5CResetPasswordController%23cleanSessionAfterReset' => 1,
+'App%5CController%5CResetPasswordController%23getSessionService' => 0,
+'[C]App%5CController%5CResetPasswordController%23getSessionService' => 1,
+'App%5CController%5CResetPasswordController%24resetPasswordHelper' => 0,
+'[C]App%5CController%5CResetPasswordController%24resetPasswordHelper' => 1,
+'App%5CController%5CResetPasswordController%24entityManager' => 0,
+'[C]App%5CController%5CResetPasswordController%24entityManager' => 1,
 'App%5CController%5CSecurityController' => 0,
 '[C]App%5CController%5CSecurityController' => 1,
 'App%5CController%5CSecurityController%23login' => 0,
@@ -1244,6 +1276,36 @@ return [[
 '[C]App%5CEntity%5CMarKat3%24aktualny' => 1,
 'App%5CEntity%5CMarKat3%24wersja' => 0,
 '[C]App%5CEntity%5CMarKat3%24wersja' => 1,
+'App%5CEntity%5CResetPasswordRequest' => 0,
+'[C]App%5CEntity%5CResetPasswordRequest' => 1,
+'App%5CEntity%5CResetPasswordRequest%23__construct' => 0,
+'[C]App%5CEntity%5CResetPasswordRequest%23__construct' => 1,
+'App%5CEntity%5CResetPasswordRequest%23getId' => 0,
+'[C]App%5CEntity%5CResetPasswordRequest%23getId' => 1,
+'App%5CEntity%5CResetPasswordRequest%23getUser' => 0,
+'[C]App%5CEntity%5CResetPasswordRequest%23getUser' => 1,
+'App%5CEntity%5CResetPasswordRequest%23initialize' => 0,
+'[C]App%5CEntity%5CResetPasswordRequest%23initialize' => 1,
+'App%5CEntity%5CResetPasswordRequest%23getRequestedAt' => 0,
+'[C]App%5CEntity%5CResetPasswordRequest%23getRequestedAt' => 1,
+'App%5CEntity%5CResetPasswordRequest%23isExpired' => 0,
+'[C]App%5CEntity%5CResetPasswordRequest%23isExpired' => 1,
+'App%5CEntity%5CResetPasswordRequest%23getExpiresAt' => 0,
+'[C]App%5CEntity%5CResetPasswordRequest%23getExpiresAt' => 1,
+'App%5CEntity%5CResetPasswordRequest%23getHashedToken' => 0,
+'[C]App%5CEntity%5CResetPasswordRequest%23getHashedToken' => 1,
+'App%5CEntity%5CResetPasswordRequest%24id' => 0,
+'[C]App%5CEntity%5CResetPasswordRequest%24id' => 1,
+'App%5CEntity%5CResetPasswordRequest%24user' => 0,
+'[C]App%5CEntity%5CResetPasswordRequest%24user' => 1,
+'App%5CEntity%5CResetPasswordRequest%24selector' => 2,
+'[C]App%5CEntity%5CResetPasswordRequest%24selector' => 1,
+'App%5CEntity%5CResetPasswordRequest%24hashedToken' => 3,
+'[C]App%5CEntity%5CResetPasswordRequest%24hashedToken' => 1,
+'App%5CEntity%5CResetPasswordRequest%24requestedAt' => 4,
+'[C]App%5CEntity%5CResetPasswordRequest%24requestedAt' => 1,
+'App%5CEntity%5CResetPasswordRequest%24expiresAt' => 4,
+'[C]App%5CEntity%5CResetPasswordRequest%24expiresAt' => 1,
 'App%5CEntity%5CSprzKat1' => 0,
 '[C]App%5CEntity%5CSprzKat1' => 1,
 'App%5CEntity%5CSprzKat1%23getId' => 0,
@@ -2254,6 +2316,87 @@ return [[
 ], [
 
 0 => [],
-1 => 1651666838,
+1 => 1653651000,
+2 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'type' => [
+                    'string',
+                ],
+                'length' => [
+                    20,
+                ],
+                'precision' => [
+                    null,
+                ],
+                'scale' => [
+                    null,
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+3 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'type' => [
+                    'string',
+                ],
+                'length' => [
+                    100,
+                ],
+                'precision' => [
+                    null,
+                ],
+                'scale' => [
+                    null,
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+4 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'type' => [
+                    'datetime_immutable',
+                ],
+                'precision' => [
+                    null,
+                ],
+                'scale' => [
+                    null,
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
 
 ]];

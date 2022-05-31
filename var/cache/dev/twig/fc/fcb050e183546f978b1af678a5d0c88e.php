@@ -155,9 +155,8 @@ class __TwigTemplate_e33a78437961567b4a5cd88c2b8d5ccd extends Template
 </section>
     <footer class=\"text-center text-white fixed-bottom\" style=\"background-color: #21081a;\">
 
-
   <!-- Copyright -->
-  <div class=\"text-center p-3\" style=\"background-color: #2f73f4;\">
+  <div class=\"text-center p-3\" style=\"background-color: #60a5fa;\">
     © 2022 Copyright:
     <a class=\"text-white\" href=\"/admin\">docthor.pl</a>
   </div>
@@ -224,9 +223,8 @@ class __TwigTemplate_e33a78437961567b4a5cd88c2b8d5ccd extends Template
 </section>
     <footer class=\"text-center text-white fixed-bottom\" style=\"background-color: #21081a;\">
 
-
   <!-- Copyright -->
-  <div class=\"text-center p-3\" style=\"background-color: #2f73f4;\">
+  <div class=\"text-center p-3\" style=\"background-color: #60a5fa;\">
     © 2022 Copyright:
     <a class=\"text-white\" href=\"/admin\">docthor.pl</a>
   </div>

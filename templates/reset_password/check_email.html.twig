@@ -17,8 +17,7 @@
     <h3 class="h3 mb-3 font-weight-normal">Zresetuj hasło</h3>
    
     <p>
-        Jeżeli istnieje konto połączone z podanym adresem email, zostanie wysłana wiaodmość email zawierający link resetowania hasła.
-        Link przedawni się za 60 minut <!-- {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }} -->.
+        Jeżeli istnieje konto połączone z podanym adresem email, zostanie wysłana wiadomość email zawierająca link umożliwiający resetowanie hasła. Link przedawni się za 60 minut <!-- {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }} -->.
     </p>
     <p>Jeśli nie widzisz wiadomości email, sprawdź folder SPAM lub <a href="{{ path('app_forgot_password_request') }}">spróbuj ponownie</a>.</p>
 
